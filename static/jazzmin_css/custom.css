@@ -1,13 +1,5 @@
-/* Admin dashboard logo - remove shadow and adjust style */
+/* Target the Jazzmin admin logo */
 .brand-link .brand-image {
-  box-shadow: none !important; /* Remove shadow */
-  border-radius: 5% !important; /* Optional - adjust border radius */
-}
-
-/* Login page logo - replace with different image */
-body.login-page .brand-logo img {
-  content: url("/static/images/dashboard_logo.jpg") !important; /* Use login logo */
-  width: 150px !important; /* Adjust width if necessary */
-  height: auto !important; /* Maintain aspect ratio */
-  border-radius: 0 !important; /* Adjust border radius if needed */
+  border-radius: 0% !important; /* Remove rounded corners */
+  box-shadow: none !important;
 }

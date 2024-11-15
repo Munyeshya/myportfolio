@@ -132,14 +132,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 JAZZMIN_SETTINGS = {
     "site_title": "CodeCraft",
     "site_header": "CodeCraft",
-    "site_logo": "images/logo1.jpg",
+    "site_logo": "images/dashboard_logo.png",  # Admin dashboard logo
     "site_brand": "CC",
     "welcome_sign": "Welcome to CC Admin Panel",
     "copyright": "© 2024 CC",
     "search_model": "auth.User",
     "topmenu_links": [
         {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
-        {"app": "base"},  # Replace 'myapp' with your app name
+        {"app": "base"},  # Replace 'base' with your actual app name
     ],
     "usermenu_links": [
         {"name": "Support", "url": "https://example.com/support", "new_window": True},
@@ -151,8 +151,8 @@ JAZZMIN_SETTINGS = {
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
     },
-    "order_with_respect_to": ["auth", "myapp"],
-    "custom_css": None,
+    "order_with_respect_to": ["auth", "base"],
+    "custom_css": "jazzmin_css/custom.css",
     "custom_js": None,
     "show_ui_builder": False,
 }

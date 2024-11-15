@@ -1,0 +1,13 @@
+/* Admin dashboard logo - remove shadow and adjust style */
+.brand-link .brand-image {
+    box-shadow: none !important;  /* Remove shadow */
+    border-radius: 5% !important;  /* Optional - adjust border radius */
+}
+
+/* Login page logo - replace with different image */
+body.login-page .brand-logo img {
+    content: url("/static/images/login_logo.jpg") !important;  /* Use login logo */
+    width: 150px !important;  /* Adjust width if necessary */
+    height: auto !important;  /* Maintain aspect ratio */
+    border-radius: 0 !important;  /* Adjust border radius if needed */
+}

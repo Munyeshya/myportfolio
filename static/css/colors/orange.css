@@ -1,0 +1,48 @@
+.new .navbar-toggler .icon, .new .navbar-toggler .icon::after, .new .navbar-toggler .icon::before { background-color: rgb(255, 165, 0); }
+.white-vertion .page-item.active .page-link { color: rgb(255, 165, 0); }
+.dark-vertion .page-item.active .page-link { color: rgb(255, 165, 0); }
+.mh-header .navbar-nav li a:hover { color: rgb(255, 165, 0); }
+.mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fa { color: rgb(255, 165, 0); }
+.mh-home .mh-header-info .mh-promo span { background-color: rgb(255, 165, 0); }
+.mh-home .mh-header-info ul li:hover .fa { color: rgb(255, 165, 0); }
+.mh-about-tag ul li span { border: 1px solid rgb(255, 165, 0); }
+.mh-about-tag ul li span:hover { background-color: rgb(255, 165, 0); }
+.mh-progress path:nth-child(2) { stroke: rgb(255, 165, 0); }
+.candidatos .parcial .percentagem { background: rgb(255, 165, 0); }
+.mh-experince .mh-education-deatils .mh-education-item .mh-eduyear { color: rgb(255, 165, 0); }
+.mh-work .mh-experience-deatils .mh-work-item .mh-eduyear { color: rgb(255, 165, 0); }
+.portfolio-nav ul li:hover { color: rgb(255, 165, 0); }
+.portfolio-nav ul li.active { color: rgb(255, 165, 0); }
+.mh-experince .mh-education-deatils .mh-education-item h4 a { color: rgb(255, 165, 0); }
+.mh-work .mh-experience-deatils .mh-work-item h4 a { color: rgb(255, 165, 0); }
+.mh-pricing .mh-pricing:hover .btn { background-color: rgb(230, 149, 0); }
+.mh-pricing .mh-pricing .fa { color: rgb(255, 219, 153); }
+.mh-pricing .mh-pricing h5 { color: rgb(255, 165, 0); }
+.mh-blog .mh-blog-item .blog-inner h2 a { color: rgb(255, 255, 255); }
+.mh-blog .mh-blog-item .blog-inner a { color: rgb(255, 165, 0); }
+.mh-blog .mh-blog-item h2 { color: rgb(255, 165, 0); }
+.mh-blog .mh-blog-item h2 a { color: rgb(255, 165, 0); }
+.mh-blog .mh-blog-item h2 a:hover { color: rgb(245, 158, 0); }
+.mh-testimonial .mh-client-item img { border: 5px solid rgb(255, 165, 0); }
+.mh-testimonial .owl-controls .owl-dots .owl-dot { border: 1px solid rgb(255, 165, 0); }
+.mh-testimonial .owl-controls .owl-dots .owl-dot.active { background-color: rgb(255, 165, 0); }
+.mh-footer-address .mh-address-footer-item .each-icon .fa { border-color: rgb(255, 165, 0); }
+.old .navbar-collapse { background-color: rgb(255, 165, 0); }
+.old .navbar-header .navbar-toggler .icon-bar { background-color: rgb(255, 165, 0); }
+.old .navbar-collapse { background-color: rgb(255, 165, 0); }
+.new .navbar-collapse { background-color: rgb(255, 165, 0); }
+.new .navbar-header .navbar-toggler .icon-bar { background-color: rgb(255, 165, 0); }
+.new .navbar-collapse { background-color: rgb(255, 165, 0); }
+.portfolio-nav ul li.current span { border-bottom: 2px solid rgb(255, 165, 0); }
+.mh-project-gallery .grid-item figure:hover figcaption { background: rgba(255, 165, 0, 0.9); }
+.mh-featured-project .mh-featured-item .mh-featured-project-content .project-category { color: rgb(255, 165, 0); }
+.mh-single-project-slide .owl-controls .owl-dots .owl-dot { border: 1px solid rgb(255, 165, 0); }
+.mh-single-project-slide .owl-controls .owl-dots .owl-dot.active { background-color: rgb(255, 165, 0); }
+.mh-service .mh-service-item a { color: rgb(255, 165, 0); }
+.mh-pagination .page-link:hover { color: rgb(255, 165, 0); }
+.mh-author-info .social-icon li a:hover { color: rgb(255, 165, 0); }
+.mh-blog-category ul li a:hover { color: rgb(255, 165, 0); }
+.mh-blog-next-prev-post a { color: rgb(255, 165, 0); }
+.comment-deatils span { color: rgb(255, 165, 0); }
+.btn.btn-fill { background-color: rgb(255, 165, 0); }
+.mh-pricing .mh-pricing .fa { color: rgb(255, 165, 0); }

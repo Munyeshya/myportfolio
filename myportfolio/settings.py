@@ -132,6 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 JAZZMIN_SETTINGS = {
     "site_title": "CodeCraft",
     "site_header": "CodeCraft",
+    "site_logo": "images/logo1.jpg",
     "site_brand": "CC",
     "welcome_sign": "Welcome to CC Admin Panel",
     "copyright": "© 2024 CC",

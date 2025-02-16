@@ -1,8 +1,9 @@
+{% load static%}
 <div class="cm-header sticky-top">
     <div class="cm-header-menu mode">
         <div class="menu-left">
             <div class="logo-area">
-                <a href="{% url 'index' %}"><img class="dark" src="assets/img/logo/dark-logo.svg" alt="axz"></a>
+                <a href="{% url 'index' %}"><img class="dark" src="{% static 'logo/dark-logo.svg' %}%" alt="axz"></a>
             </div>
             <div class="header-menu">
                 <ul class="list-unstyled">

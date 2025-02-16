@@ -1,3 +1,5 @@
+{% load static %}
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="AXZ - Template for Seamless Personal Portfolio HTML5 Template">
@@ -6,8 +8,11 @@
 <meta name="author" content="Creativemela">
 <title>Coderaft</title>
 
-<link rel="icon" type="image/png" href="assets/img/logo/favicon.png">
-<link rel="stylesheet" href="assets/css/animate.min.css">
-<link rel="stylesheet" href="assets/css/swiper__bundle.css">
-<link rel="stylesheet" href="assets/css/normalize.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{% static 'img/logo/favicon.png' %}">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/swiper_bundle.css' %}">
+<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">

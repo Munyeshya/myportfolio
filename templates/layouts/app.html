@@ -22,7 +22,33 @@
     <body data-barba="wrapper">
         <div class="cm-content" >
             <div class="container">
-                
+                {% include 'inc/necessity.html' %}
+                <div class="cm-axz-content">
+                    <!-- header area -->
+                    <div class="cm-header sticky-top">
+                        <div class="cm-header-menu mode">
+                            <div class="menu-left">
+                                <div class="logo-area">
+                                    
+                                    <a href="index.html"><img class="dark" src="assets/img/logo/dark-logo.svg" alt="axz"></a>
+                                </div>
+                                <div class="header-menu">
+                                    <ul class="list-unstyled">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="contact.html" class="hire">Hire Me!</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             
+                        </div>
+                    </div>
+                    <!-- header area end -->
+                    <div class="cm-content-area" data-barba="container" data-barba-namespace="index">
+                        <div class="cm-content-box mode">
+                            {% block content %}{% endblock %}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         

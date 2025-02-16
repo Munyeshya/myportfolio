@@ -5,3 +5,6 @@ def index(request):
 
 def about(request):
     return render(request, 'about.html')  # Renders about.html template
+
+def contact(request):
+    return render(request, 'contact.html')  # Renders about.html template

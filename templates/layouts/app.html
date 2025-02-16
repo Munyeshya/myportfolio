@@ -1,111 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AXZ - Template for Seamless Personal Portfolio HTML5 Template">
-    <meta name="keywords" content="CV, Personal, Writer, Designer, Developer">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Creativemela">
-    <title> Coderaft</title>
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="assets/img/logo/favicon.png">
-    <!-- animate css -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!-- swiper slider css -->
-    <link rel="stylesheet" href="assets/css/swiper__bundle.css">
-    <!-- normalize css -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!-- style css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    {% include 'inc/header.html' %}
 </head>
-    <body data-barba="wrapper">
-        <div class="cm-content" >
-            <div class="container">
-                {% include 'inc/necessity.html' %}
-                <div class="cm-axz-content">
-                    <!-- header area -->
-                    <div class="cm-header sticky-top">
-                        <div class="cm-header-menu mode">
-                            <div class="menu-left">
-                                <div class="logo-area">
-                                    
-                                    <a href="index.html"><img class="dark" src="assets/img/logo/dark-logo.svg" alt="axz"></a>
-                                </div>
-                                <div class="header-menu">
-                                    <ul class="list-unstyled">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="contact.html" class="hire">Hire Me!</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                             
-                        </div>
+<body data-barba="wrapper">
+    <div class="cm-content">
+        <div class="container">
+            {% include 'inc/necessity.html' %}
+            
+            <div class="cm-axz-content">
+                {% include 'inc/navigation.html' %}
+                
+                <!-- Page Content -->
+                <div class="cm-content-area" data-barba="container">
+                    <div class="cm-content-box mode">
+                        {% block content %}{% endblock %}
                     </div>
-                    <!-- header area end -->
-                    <div class="cm-content-area" data-barba="container" data-barba-namespace="index">
-                        <div class="cm-content-box mode">
-                            {% block content %}{% endblock %}
-                        </div>
-                        {% include 'inc/footer.html' %}
-                    </div>
-                    
                 </div>
+                
+                {% include 'inc/footer.html' %}
             </div>
         </div>
-        <!-- offcanvase menu -->
-        <div class="cm-offcanvase">
-            <div class="cm-menu-overlay"></div>
-            <div class="cm-menu-inner">
-                <div class="cm-close-icon"><img src="assets/img/icons/x-lg.svg" alt=""></div>
-                <div class="cm-offcanvase__logo logo-area">
-                     
-                    <a href="index.html"><img class="dark" src="assets/img/logo/dark-logo.svg" alt=""></a>
-                </div>
-                <div class="cm-sidemenu">
-                    <div class="cm-menu">
-                        <ul>
-                            <li><a class="link" href="index.html"><img class="svg" src="assets/img/icons/home.svg" alt=""> Home</a></li>
-                            <li><a class="link" href="about.html"><img class="svg" src="assets/img/icons/about.svg" alt=""> About</a></li>
-                            <li><a class="link" href="service.html"><img class="svg" src="assets/img/icons/service.svg" alt=""> Service</a></li>
-                            <li><a class="link" href="portfolio.html"><img class="svg" src="assets/img/icons/portfolio.svg" alt=""> portfolio</a></li>
-                            <li><a class="link" href="pricing.html"><img class="svg" src="assets/img/icons/pricing.svg" alt=""> pricing</a></li>
-                            <li><a class="link" href="education.html"><img class="svg" src="assets/img/icons/education.svg" alt=""> education</a></li>
-                            <li><a class="link" href="blog.html"><img class="svg" src="assets/img/icons/blog.svg" alt=""> blog</a></li>
-                            <li><a class="link" href="contact.html"><img class="svg" src="assets/img/icons/contact.svg" alt=""> contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="cm-sidecontact">
-                    <h6>Contact Me</h6>
-                    <a href="#">+8801712345678</a>
-                    <a href="#">axz@axz.com</a>
-                </div>
-            </div>
-        </div>
-        <!-- offcanvase menu end -->
-        <!-- animation -->
-        <div class="animation">
-            <div class="animation__screen"></div>
-        </div>
-        <!-- animation end -->
-        <!-- jquery -->
-        <script src="assets/js/Jquery-3.7.1.js"></script>
-        <!-- barba - jquery included -->
-        <script src="assets/js/barba.core.js"></script>
-        <!-- ajax contact form js -->
-        <script src="assets/js/ajax-contact.js"></script>
-        <!-- appear - jquery included -->
-        <script src="assets/js/appear.min.js"></script>
-        <!-- imageloaded pkgd - jquery included -->
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <!-- swiper - jquery included -->
-        <script src="assets/js/swiper-bundle-min.js"></script>
-        <!-- svginject - jquery included -->
-        <script src="assets/js/svginject.min.js"></script>
-        <!-- gsap animation -->
-        <script src="assets/js/gsap/gsap-3.12.3.js"></script>
-        <!-- main js -->
-        <script src="assets/js/main.js"></script>
-    </body>
+    </div>
+
+    {% include 'inc/scripts.html' %}
+</body>
 </html>

@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
-    <h1>Welcome to the Home Page</h1>
-    <a href="{% url 'about' %}">About Page</a>
-</body>
-</html>
+<!-- templates/index.html -->
+{% extends "layouts/app.html" %}
+
+{% block content %}
+<div class="cm-content-item index">
+    <h1 class="main-title">I'm making product and <span>design</span> minimal modern.</h1>
+    <div class="cm-contact-zone">
+        <a href="mailto:hi@infoexample.com">
+            <span><img src="assets/img/icons/email.svg" alt="email" height="24" width="24"></span>
+            hi@infoexample.com
+        </a>
+        <a href="callto:+8801712345678">
+            <span><img src="assets/img/icons/phone.svg" alt="phone" height="24" width="24"></span>
+            +8801712345678
+        </a>
+    </div>
+</div>
+{% endblock %}

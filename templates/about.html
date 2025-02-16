@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
-    <h1>About Us</h1>
-    <a href="{% url 'home' %}">Home Page</a>
-</body>
-</html>
+<!-- templates/about.html -->
+{% extends "layouts/app.html" %}
+
+{% block content %}
+<div class="cm-content-item cm-page-template">
+    <h1 class="main-title">
+        Hire the best Portfolio Freelancers in <span>Jeckob Martin</span>
+    </h1>
+    <p>There are many variations of passages of Lorem Ipsum available...</p>
+{% endblock %}

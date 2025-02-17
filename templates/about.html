@@ -1,10 +1,88 @@
-<!-- templates/about.html -->
 {% extends "layouts/app.html" %}
+{% load static %}
 
 {% block content %}
-<div class="cm-content-item cm-page-template">
-    <h1 class="main-title">
-        Hire the best Portfolio Freelancers in <span>Jeckob Martin</span>
-    </h1>
-    <p>There are many variations of passages of Lorem Ipsum available...</p>
+
+    <div class="cm-content-item cm-page-template">
+        <div class="cm-content-item__top">
+            <div class="top-right-bg"></div>
+            <div class="cm-content-circle">
+                <svg class="circle" viewBox="0 0 100 100" width="120" height="120">
+                    <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path>
+                    </defs>
+                    <text>
+                        <textPath xlink:href="#circle">Beni Obed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Work with the best</textPath>
+                    </text>
+                </svg>
+                <div class="circle-logo">
+                    <img src="{% static 'img/logo/circle-logo.svg' %}" alt="">
+                </div>
+            </div>
+            <div class="cm-content-sub">
+                <div class="icon">
+                    <img src="{% static 'img/icons/about.svg' %}" alt="icon" class="svg">
+                </div>
+                <p>Me! About</p>
+            </div>
+            <h1 class="main-title">
+                Hire the best Portfolio
+                Freelancers in <span>Jeckob Martin</span>
+                <u class="cm-inline">
+                    <img src="{% static 'img/content/line.svg' %}" alt="">
+                </u>
+                in Los Angeles.
+            </h1>
+        </div>
+        <!-- About Brief -->
+        <div class="cm-about-brief">
+            <div class="cm-about-left">
+                <p>There are many variations of passages of Lorem Ipsum available, but majority have
+                    suffered alteration in some form, by injected humour.</p>
+                <div class="cm-rating">
+                    <div class="star-icon">
+                        <img src="{% static 'img/icons/star.svg' %}" alt="star" height="24" width="24">
+                    </div>
+                    <div class="cm-rating-count">
+                        <h4>5 Star</h4>
+                        <p>Read Our <a href="#">Success Story's</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cm-about-right">
+                <p>Randomised words which don't look even slightly believable. If you are going to use
+                    a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                    hidden in the middle of text.</p>
+                <p class="cm-margin">
+                    Generators on the Internet tend to repeat predefined chunks as necessary, making
+                    this the first true generator on the Internet.
+                </p>
+            </div>
+        </div>
+        <!-- About Brief End -->
+        <!-- About Info -->
+        <div class="cm-about-info">
+            <div class="cm-about-info-content">
+                <div class="about-info">
+                    <h6 class="name">Name</h6>
+                    <p>Donald L. Juarez</p>
+                </div>
+                <div class="about-info">
+                    <h6 class="name">Phone</h6>
+                    <p>+99 (555) 666 88 55</p>
+                </div>
+            </div>
+            <div class="cm-about-info-content">
+                <div class="about-info">
+                    <h6 class="name">Office</h6>
+                    <p>1247/Plot No. 39, New York.</p>
+                </div>
+                <div class="about-info">
+                    <h6 class="name">Experience</h6>
+                    <p>12 Years</p>
+                </div>
+            </div>
+        </div>
+        <!-- About Info End -->
+    </div>
 {% endblock %}

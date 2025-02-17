@@ -1,0 +1,144 @@
+{% extends "layouts/app.html" %}
+{% load static %}
+
+{% block content %}
+<div class="cm-content-item cm-page-template">
+    <div class="cm-content-item__top">
+        <div class="top-right-bg"></div>
+        <div class="cm-content-circle">
+            <svg class="circle" viewBox="0 0 100 100" width="120" height="120">
+                <defs>
+                    <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path>
+                </defs>
+                <text>
+                    <textPath xlink:href="#circle">Beni Obed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Work with the best</textPath>
+                </text>
+            </svg>
+            <div class="circle-logo">
+                <img src="{% static 'img/logo/circle-logo.svg' %}" alt="">
+            </div>
+        </div>
+        <div class="cm-content-sub">
+            <div class="icon">
+                <img class="svg" src="{% static 'img/icons/portfolio.svg' %}" alt="">
+            </div>
+            <p>Best Our Portfolio</p>
+        </div>
+        <h1 class="main-title">
+            The Best Code Crafters <br>
+            make Our <span>Portfolio</span>
+            <u>
+                <img src="{% static 'img/content/line.svg' %}" alt="">
+            </u>
+        </h1>
+    </div>
+    <!-- Portfolio Content -->
+    <div class="cm-portfolio">
+         <div class="cm-portfolio-item">
+            <!-- Single Portfolio -->
+            <div class="single-portfolio-content">
+                <div class="cm-portfolio-thumb">
+                    <img src="{% static 'img/portfolio/01.jpg' %}" alt="portfolio-item">
+                    <a href="#" class="cm-portfolio-cat">Mockup  Design</a>
+                    <div class="cm-center-btn">
+                        <a href="#" class="cm-round-btn">
+                            <img src="{% static 'img/icons/rotate-arrow.svg' %}" alt="" height="20" width="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cm-portfolio-meta">
+                    <div class="cm-tag">
+                        <span>Type:</span> UX, UI, UXW, 3D
+                    </div>
+                    <a class="title" href="#">Bronco PSD, Figma & XD Design</a>
+                </div>
+            </div>
+            <!-- Single Portfolio -->
+            <div class="single-portfolio-content">
+                <div class="cm-portfolio-thumb">
+                    <img src="{% static 'img/portfolio/02.jpg' %}" alt="portfolio-item">
+                    <a href="#" class="cm-portfolio-cat">Web Design</a>
+                    <div class="cm-center-btn">
+                        <a href="#" class="cm-round-btn">
+                            <img src="{% static 'img/icons/rotate-arrow.svg' %}" alt="" height="20" width="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cm-portfolio-meta">
+                    <div class="cm-tag">
+                        <span>Type:</span> Web and iOS Application
+                    </div>
+                    <a class="title" href="#">Website UI Design</a>
+                </div>
+            </div>
+            <!-- Single Portfolio -->
+            <div class="single-portfolio-content">
+                <div class="cm-portfolio-thumb">
+                    <img src="{% static 'img/portfolio/03.jpg' %}" alt="portfolio-item">
+                    <a href="#" class="cm-portfolio-cat">Bronco Design</a>
+                    <div class="cm-center-btn">
+                        <a href="#" class="cm-round-btn">
+                            <img src="{% static 'img/icons/rotate-arrow.svg' %}" alt="" height="20" width="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cm-portfolio-meta">
+                    <div class="cm-tag">
+                        <span>Type:</span> Mobile Application
+                    </div>
+                    <a class="title" href="#">Flayer Microsoft Template Design</a>
+                </div>
+            </div>
+            <!-- Single Portfolio -->
+            <div class="single-portfolio-content">
+                <div class="cm-portfolio-thumb">
+                    <img src="{% static 'img/portfolio/04.jpg' %}" alt="portfolio-item">
+                    <a href="#" class="cm-portfolio-cat">Mockup  Design</a>
+                    <div class="cm-center-btn">
+                        <a href="#" class="cm-round-btn">
+                            <img src="{% static 'img/icons/rotate-arrow.svg' %}" alt="" height="20" width="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cm-portfolio-meta">
+                    <div class="cm-tag">
+                        <span>Type:</span> UX, UI, UXW, 3D
+                    </div>
+                    <a class="title" href="#">Bronco PSD, Figma & XD Design</a>
+                </div>
+            </div>
+            <!-- Single Portfolio -->
+            <div class="single-portfolio-content">
+                <div class="cm-portfolio-thumb">
+                    <img src="{% static 'img/portfolio/05.jpg' %}" alt="portfolio-item">
+                    <a href="#" class="cm-portfolio-cat">Mockup  Design</a>
+                    <div class="cm-center-btn">
+                        <a href="#" class="cm-round-btn">
+                            <img src="{% static 'img/icons/rotate-arrow.svg' %}" alt="" height="20" width="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cm-portfolio-meta">
+                    <div class="cm-tag">
+                        <span>Type:</span> Web and iOS Application
+                    </div>
+                    <a class="title" href="#">Furniture mockup template</a>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination -->
+        <div class="cm-site-pagination">
+            <nav aria-label="pagination-area">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#" tabindex="0">01</a></li>
+                    <li class="page-item"><a class="page-link" href="#">02</a></li>
+                    <li class="page-item"><a class="page-link" href="#">03</a></li>
+                    <li class="page-item"><a class="page-link" href="#">04</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+    <!-- Portfolio Content End -->
+</div>
+{% endblock %}

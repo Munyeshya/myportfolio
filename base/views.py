@@ -11,3 +11,6 @@ def contact(request):
 
 def services(request):
     return render(request, 'services.html')  # Renders about.html template
+
+def portfolio(request):
+    return render(request, 'portfolio.html')  # Renders about.html template

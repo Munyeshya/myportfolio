@@ -1,0 +1,158 @@
+{% extends "layouts/app.html" %}
+{% load static %}
+
+{% block content %}
+<div class="cm-content-item cm-page-template">
+    <div class="cm-content-item__top">
+        <div class="top-right-bg"></div>
+        <div class="cm-content-circle">
+            <svg class="circle" viewBox="0 0 100 100" width="120" height="120">
+                <defs>
+                    <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path>
+                </defs>
+                <text font-size="8.75">
+                    <textPath xlink:href="#circle">Beni Obed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Work with the best</textPath>
+                </text>
+            </svg>
+            <div class="circle-logo">
+                <img src="{% static 'img/logo/circle-logo.svg' %}" alt="">
+            </div>
+        </div>
+        <div class="cm-content-sub">
+            <div class="icon">
+                <img class="svg" src="{% static 'img/icons/education.svg' %}" alt="education">
+            </div>
+            <p>Education and Skills</p>
+        </div>
+        <h1 class="main-title">
+            The Best Code Crafters <hr><br> Education <span>&</span> Experience
+            <u>
+                <img src="{% static 'img/content/line.svg' %}" alt="">
+            </u>
+        </h1>
+    </div>
+    <!-- Education Section -->
+    <div class="cm-education-education">
+        <div class="single-info-item">
+            <h3>Education</h3>
+            <div class="cm-education-timeline-content">
+                <div class="education-timeline">
+                    <div class="left-side">
+                        <h6 class="uni-name">University of Oxford</h6>
+                        <p>Dec 2023 - Current</p>
+                    </div>
+                    <div class="right-side">
+                        <h6 class="degree">Accounting and Law BA</h6>
+                        <p>Phasellus eros lectus, ultricies ut nisl in, sodales rhoncusem. Maecenas
+                            molestie design maturity strategy.</p>
+                    </div>
+                </div>
+                <div class="education-timeline">
+                    <div class="left-side">
+                        <h6 class="uni-name">State University Of UK</h6>
+                        <p>2010-2014</p>
+                    </div>
+                    <div class="right-side">
+                        <h6 class="degree">Accounting and Law BA</h6>
+                        <p>Phasellus eros lectus, ultricies ut nisl in, sodales rhoncusem. Maecenas
+                            molestie design maturity strategy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Professional Experience -->
+        <div class="single-info-item">
+            <h3>Professional</h3>
+            <div class="cm-education-timeline-content">
+                <div class="education-timeline">
+                    <div class="left-side">
+                        <h6 class="uni-name">Web Agency</h6>
+                        <p>Dec 2023 - Current</p>
+                    </div>
+                    <div class="right-side">
+                        <h6 class="degree">Frontend Developer</h6>
+                        <p>Phasellus eros lectus, ultricies ut nisl in, sodales rhoncusem. Maecenas
+                            molestie design maturity strategy.</p>
+                    </div>
+                </div>
+                <div class="education-timeline">
+                    <div class="left-side">
+                        <h6 class="uni-name">Creativemela</h6>
+                        <p>2013-2014</p>
+                    </div>
+                    <div class="right-side">
+                        <h6 class="degree">Web Development</h6>
+                        <p>Phasellus eros lectus, ultricies ut nisl in, sodales rhoncusem. Maecenas
+                            molestie design maturity strategy.</p>
+                    </div>
+                </div>
+                <div class="education-timeline">
+                    <div class="left-side">
+                        <h6 class="uni-name">AXZ IT Company</h6>
+                        <p>2010-2012</p>
+                    </div>
+                    <div class="right-side">
+                        <h6 class="degree">UI/UX Designer</h6>
+                        <p>Phasellus eros lectus, ultricies ut nisl in, sodales rhoncusem. Maecenas
+                            molestie design maturity strategy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skills Section -->
+        <div class="single-info-item">
+            <div class="cm-row">
+                <h3>Skills</h3>
+                <div class="cm-skill-container">
+                    <div class="single-skill-item">
+                        <div class="expertise__single">
+                            <p class="expertise__title">Design - <span>90%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" 
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="expertise__single">
+                            <p class="expertise__title">Art Direction - <span>89%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 89%" 
+                                    aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="expertise__single">
+                            <p class="expertise__title">Branding - <span>60%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" 
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-skill-item cm-md-5">
+                        <div class="expertise__single">
+                            <p class="expertise__title">Website Design - <span>40%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 40%" 
+                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="expertise__single">
+                            <p class="expertise__title">UX/UI Design - <span>70%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" 
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="expertise__single">
+                            <p class="expertise__title">Web Development -<span>95%</span></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" 
+                                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+{% endblock %}

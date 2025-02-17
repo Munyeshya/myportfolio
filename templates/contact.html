@@ -1,6 +1,142 @@
-<!-- templates/index.html -->
 {% extends "layouts/app.html" %}
+{% load static %}
 
 {% block content %}
-Contactn Page
+<div class="cm-content-item cm-page-template">
+    <div class="cm-content-item__top">
+        <div class="top-right-bg"></div>
+        <div class="cm-content-circle">
+            <svg class="circle" viewBox="0 0 100 100" width="120" height="120">
+                <defs>
+                    <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path>
+                </defs>
+                <text>
+                    <textPath xlink:href="#circle">Martin Web Design and Development Service Company</textPath>
+                </text>
+            </svg>
+            <div class="circle-logo">
+                <img src="{% static 'img/logo/circle-logo.svg' %}" alt="">
+            </div>
+        </div>
+        <div class="cm-content-sub">
+            <div class="icon">
+                <img class="svg" src="{% static 'img/icons/contact.svg' %}" alt="">
+            </div>
+            <p>Contact our office</p>
+        </div>
+        <h1 class="main-title">
+            Jeckob Martin the best <br>
+             Contact <span>Us</span>
+             <u>
+                <img src="{% static 'img/content/line.svg' %}" alt="">
+            </u>
+        </h1>
+    </div>
+
+  <!-- Contact Content -->
+    <div class="cm-contact-area">
+        <div class="cm-contact-method">
+            <h3 class="section-title">Contact</h3>
+            <div class="cm-contact-method__content">
+                <!-- Single Contact Item -->
+                <div class="single-contact-item">
+                    <div class="single-contact-item__top">
+                        <div class="cm-icon">
+                            <img src="{% static 'img/icons/phone-call.svg' %}" alt="call" height="50" width="50">
+                        </div>
+                        <div class="cm-text">
+                            <p>Contact Phone</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-item__bottom">
+                        <a href="tel:+5588866622">+55 888 666 22</a>
+                        <a href="tel:+5588866633">+55 888 666 33</a>
+                    </div>
+                </div>
+                <!-- Single Contact Item End -->
+                <!-- Single Contact Item -->
+                <div class="single-contact-item">
+                    <div class="single-contact-item__top">
+                        <div class="cm-icon">
+                            <img src="{% static 'img/icons/mail-open.svg' %}" alt="mail-open" height="50" width="50">
+                        </div>
+                        <div class="cm-text">
+                            <p>Contact Email</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-item__bottom">
+                        <a href="mailto:Info.axz@gmail.com">Info.axz@gmail.com</a>
+                        <a href="mailto:Info.mela@gmail.com">Info.mela@gmail.com</a>
+                    </div>
+                </div>
+                <!-- Single Contact Item End -->
+                <!-- Single Contact Item -->
+                <div class="single-contact-item">
+                    <div class="single-contact-item__top">
+                        <div class="cm-icon">
+                            <img src="{% static 'img/icons/location-dot.svg' %}" alt="location" height="50" width="50">
+                        </div>
+                        <div class="cm-text">
+                            <p>Contact Location</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-item__bottom">
+                        <p class="location-text">
+                            Mirpur 12, Pollobi, <br>
+                            Dhaka, Bangladesh
+                        </p>
+                    </div>
+                </div>
+                <!-- Single Contact Item End -->
+            </div>
+        </div>
+        <!-- Location Map -->
+        <div class="cm-location-map">
+            <h3 class="section-title">Location Map</h3>
+            <div class="cm-location-map__content">
+                <div class="cm-map-iframe">
+                    <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Mirpur%20Dhaka+(Martin)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Form -->
+        <div class="cm-contact-form">
+            <h3 class="section-title">Contact Us</h3>
+            <div class="cm-contact-form__content">
+                <form action="#" method="POST" class="cm-form">
+                    <div class="single-input">
+                        <div class="single-input__item">
+                            <label for="fname">Your first name <span>*</span></label>
+                            <input type="text" name="fname" id="fname" required>
+                        </div>
+                        <div class="single-input__item">
+                            <label for="lname">Your last name <span>*</span></label>
+                            <input type="text" name="lname" id="lname" required>
+                        </div>
+                    </div>
+                    <div class="single-input">
+                        <div class="single-input__item">
+                            <label for="email">Your email address <span>*</span></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="single-input__item">
+                            <label for="phone">Your phone number <span>*</span></label>
+                            <input type="number" name="phone" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="single-input">
+                        <div class="single-input__item w-full">
+                            <label for="msg">Your message <span>*</span></label>
+                           <textarea name="msg" id="msg" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="cm-btn primary">Submit Now</button>
+                </form>
+                <!-- Message Sending Notification -->
+                <div class="contact__msg mt-40"></div>
+            </div>
+        </div>
+    </div>
+  <!-- Contact Content End -->
+</div>
 {% endblock %}

@@ -1,0 +1,143 @@
+{% extends "layouts/app.html" %}
+{% load static %}
+
+{% block content %}
+<div class="cm-content-item cm-page-template">
+    <div class="cm-content-item__top">
+        <div class="top-right-bg"></div>
+        <div class="cm-content-circle">
+            <svg class="circle" viewBox="0 0 100 100" width="120" height="120">
+                <defs>
+                    <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path>
+                </defs>
+                <text>
+                    <textPath xlink:href="#circle">Martin Web Design and Development Service Company</textPath>
+                </text>
+            </svg>
+            <div class="circle-logo">
+                <img src="{% static 'img/logo/circle-logo.svg' %}" alt="">
+            </div>
+        </div>
+        <div class="cm-content-sub">
+            <div class="icon">
+                <img class="svg" src="{% static 'img/icons/pricing.svg' %}" alt="">
+            </div>
+            <p>Best Our Pricing</p>
+        </div>
+        <h1 class="main-title">
+            Jeckob Martin the best <br>
+            Pricing <span>&</span> Testimonials
+            <u>
+                <img src="{% static 'img/content/line.svg' %}" alt="">
+            </u>
+        </h1>
+    </div>
+    
+    <!-- Pricing Section -->
+    <div class="cm-pricing-area">
+        <h3 class="section-title">Pricing</h3>
+        <div class="cm-pricing">
+            <!-- Single Pricing Table -->
+            <div class="pricing-table">
+                <div class="pricing-table__single">
+                    <div class="pricing-plan">
+                        <h3 class="plan-name">Standard</h3>
+                        <div class="plan-switcher">
+                            <button class="plan active">Monthly</button>
+                            <span>/</span>
+                            <button class="plan">Yearly</button>
+                        </div>
+                    </div>
+                    <div class="plan-trial">
+                        <button class="plan-trial-btn">Free Trial</button>
+                    </div>
+                    <div class="plan-content">
+                        <ul class="plan-content__list">
+                            <li class="plan-content__list--item"><span>1</span> Installation</li>
+                            <li class="plan-content__list--item"><span>Wind</span> Generators</li>
+                            <li class="plan-content__list--item"><span>5 Months</span> Delivery Support</li>
+                            <li class="plan-content__list--item">Support with <span>8 Engineers</span></li>
+                            <li class="plan-content__list--item"><span>100%</span> Energy Saver</li>
+                        </ul>
+                    </div>
+                    <div class="plan-price">
+                        <sub class="dollar">$</sub>
+                        <span class="price">116</span>
+                        <sub class="billing-method">/Monthly</sub>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="cm-testimonial-area">
+        <h3 class="section-title">Testimonials</h3>
+        <div class="cm-testimonials">
+            <div class="cm-testimonial">
+                <div class="swiper-wrapper">
+                    <!-- Single Testimonial -->
+                    <div class="swiper-slide">
+                        <div class="cm-testimonial__single">
+                            <div class="author-rating">
+                                <div class="author">
+                                    <h5 class="name">N. Henry Lucas</h5>
+                                    <p class="designation">Web Designer of <span>Creativemela</span></p>
+                                </div>
+                                <div class="rating">
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                </div>
+                            </div>
+                            <p class="description">Nam ultricies sed leo eget vehi. magna quistoli mats. Inter temps semper our has been lecto.</p>
+                            <div class="testimonial-footer">
+                                <div class="footer-left">
+                                    <p class="left-text">Explosive Revenue <br>
+                                        Growth <span>12.5k</span>
+                                    </p>
+                                </div>
+                                <div class="quote">
+                                    <span><img src="{% static 'img/icons/quote.svg' %}" class="svg" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Testimonial -->
+                    <div class="swiper-slide">
+                        <div class="cm-testimonial__single">
+                            <div class="author-rating">
+                                <div class="author">
+                                    <h5 class="name">Sohag Biswas</h5>
+                                    <p class="designation">Senior WP Dev <span>Mthemeus</span></p>
+                                </div>
+                                <div class="rating">
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                    <span><img src="{% static 'img/icons/star-svg.svg' %}" alt=""></span>
+                                </div>
+                            </div>
+                            <p class="description">Nam ultricies sed leo eget vehi. magna quistoli mats. Inter temps semper our has been lecto.</p>
+                            <div class="testimonial-footer">
+                                <div class="footer-left">
+                                    <p class="left-text">Explosive Revenue <br>
+                                        Growth <span>12.5k</span>
+                                    </p>
+                                </div>
+                                <div class="quote">
+                                    <span><img src="{% static 'img/icons/quote.svg' %}" class="svg" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination__dot"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

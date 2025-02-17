@@ -9,4 +9,5 @@ urlpatterns = [
     path("contact/",contact, name="contact"),
     path("services/",services, name="services"),
     path("portfolio/",portfolio, name="portfolio"),
+    path("portfolio/slug/",portfolio_slug, name="portfolio-details"),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 

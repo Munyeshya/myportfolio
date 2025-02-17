@@ -14,3 +14,6 @@ def services(request):
 
 def portfolio(request):
     return render(request, 'portfolio.html')  # Renders about.html template
+
+def portfolio_slug(request):
+    return render(request, 'portfolio-details.html')  # Renders about.html template

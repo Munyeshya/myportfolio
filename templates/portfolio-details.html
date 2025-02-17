@@ -1,0 +1,65 @@
+{% extends "layouts/app.html" %}
+{% load static %}
+
+{% block content %}
+<div class="cm-content-item__top">
+    <div class="top-right-bg"></div>
+    <div class="cm-content-circle">
+        <svg class="circle" viewBox="0 0 100 100" width="120" height="120">
+            <defs>
+                <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path>
+            </defs>
+            <text font-size="8.75">
+                <textPath xlink:href="#circle">Beni Obed &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Work with the best</textPath>
+            </text>
+        </svg>
+        <div class="circle-logo">
+            <img src="{% static 'img/logo/circle-logo.svg' %}" alt="">
+        </div>
+    </div>
+    <div class="cm-content-sub">
+        <div class="icon">
+            <img class="svg" src="{% static 'img/icons/portfolio.svg' %}" alt="">
+        </div>
+        <p>Best Our Portfolio</p>
+    </div>
+    <h1 class="main-title">
+        The Best Code Crafters<br>
+        make Our <span>Portfolio</span>
+    </h1>
+</div>
+
+<div class="cm-portfolio">
+    <div class="cm-portfolio-details mt-50">
+        <div class="portfolio-content">
+            <div class="project-thumb">
+                <img src="{% static 'img/portfolio/06.jpg' %}" alt="project-thumb">
+            </div>
+            <div class="project-meta">
+                <div class="client">
+                    <span>Clients:</span>
+                    <span class="darker">MD Towkib Tanvir</span>
+                </div>
+                <div class="category">
+                    <span>Category:</span>
+                    <a href="#" class="darker">Business Consulting</a>
+                </div>
+                <div class="deadline">
+                    <span>Timeframe:</span>
+                    <span class="darker">August 05, 2023</span>
+                </div>
+            </div>
+            <h2 class="project-title">Figma Design</h2>
+            <p class="project-description">Maecenas sed tortor molestie, sagittis nibh sit amet, dapibus felis. Vivamus sed neque iaculis, ultrices nulla eu, venenatis dui. Praesent luctus urna eu dapibus pulvinar. Curabitur sed magna accumsan neque fermentum laoreet. Ut nunc.</p>
+            <div class="project-feature">
+                <ul>
+                    <li class="project-feature__single">Will you provide website layout about design</li>
+                    <li class="project-feature__single">Branding With Business Agency</li>
+                    <li class="project-feature__single">Why should I work with an agency over a freelancer</li>
+                    <li class="project-feature__single">How much do you charge for branding</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -19,4 +19,4 @@ def portfolio_slug(request):
     return render(request, 'portfolio-details.html')  # Renders about.html template
 
 def education(request):
-    return render(request, 'education.html')  # Renders about.html template
+    return render(request, 'education.html')  # Renders about.html template perfectly

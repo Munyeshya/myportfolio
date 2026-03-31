@@ -3,7 +3,7 @@ export const profile = {
   role: 'Software Engineer',
   title: 'Full Stack Developer & Production Support Engineer',
   summary:
-    'Software engineer with hands-on experience delivering real-world solutions across backend, frontend, and mobile development. I build full-stack applications, integrate complex APIs, deploy production systems, and support end users with clear communication and disciplined problem solving.',
+    'I am a software engineer with hands-on experience in backend, frontend, and mobile development. My work focuses on building full-stack applications, integrating complex APIs, deploying production systems, and supporting users in a clear and professional way.',
   location: 'Kigali, Rwanda',
   phone: '+250 786 042 755',
   email: 'beniobed02@gmail.com',
@@ -16,10 +16,10 @@ export const profile = {
     { value: '24/7', label: 'Problem-solving mindset for active systems and users' },
   ],
   strengths: [
-    'Full-stack application design and delivery',
-    'Government and third-party API integrations',
-    'Production deployment on VPS and Linux environments',
-    'Turning user issues into clear technical fixes',
+    'Designing and delivering full-stack applications',
+    'Integrating government and third-party APIs',
+    'Deploying and maintaining systems on VPS and Linux servers',
+    'Investigating user issues and turning them into practical fixes',
   ],
   industries: ['Manufacturing', 'Public Sector Integrations', 'Education', 'Internal Operations'],
   education: [
@@ -48,8 +48,8 @@ export const experience = [
     title: 'Software Developer',
     company: 'Nexcode',
     achievements: [
-      'Delivered software features across backend and frontend flows with attention to reliability and maintainability.',
-      'Worked through debugging, issue analysis, and release support to keep real systems useful for end users.',
+      'I deliver backend and frontend features with a strong focus on reliability and maintainability.',
+      'I handle debugging, issue analysis, and release support to keep systems stable for end users.',
     ],
   },
   {
@@ -57,8 +57,8 @@ export const experience = [
     title: 'Software Developer',
     company: 'IDA Technology',
     achievements: [
-      'Contributed to implementation work tied to integrations, business logic, and client-facing requirements.',
-      'Earned industrial training recognition while building practical engineering skills in active delivery environments.',
+      'I contributed to integrations, business logic, and client-facing requirements across active projects.',
+      'I strengthened my practical engineering skills while earning industrial training recognition.',
     ],
   },
   {
@@ -66,8 +66,8 @@ export const experience = [
     title: 'Full Stack Developer',
     company: 'Rwanda Special Materials',
     achievements: [
-      'Built and supported a factory management platform covering orders, payments, production monitoring, and inventory.',
-      'Translated operational workflows into software used by real teams and business stakeholders.',
+      'I built and supported a factory management platform covering orders, payments, production monitoring, and inventory.',
+      'I translated day-to-day operational workflows into software used by teams and business stakeholders.',
     ],
   },
 ]

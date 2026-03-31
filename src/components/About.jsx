@@ -16,7 +16,7 @@ function About() {
             <div className="section-pill">About</div>
             <h2 className="section-title">Operational Software</h2>
             <p className="section-subtitle">
-              Engineering, support, and delivery all matter when software is used by real teams.
+              I care about engineering, delivery, and support because software has to work for real teams.
             </p>
             <p className="section-copy">
               {profile.summary}

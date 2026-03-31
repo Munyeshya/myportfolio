@@ -4,9 +4,9 @@ export const projects = [
     badge: 'Flagship Project',
     category: 'Manufacturing Operations',
     problem:
-      'Rwanda Special Materials needed one system that could follow orders, payments, production progress, and inventory without relying on disconnected spreadsheets and manual follow-ups.',
+      'At Rwanda Special Materials, I worked on a system that brought orders, payments, production progress, and inventory into one workflow instead of relying on disconnected spreadsheets and manual follow-ups.',
     outcome:
-      'Built a business-critical platform that gave teams better operational visibility and supported real client-facing work in production.',
+      'The result was a business-critical platform that gave the team better operational visibility and supported real client-facing work in production.',
     stack: ['React', 'Django', 'PostgreSQL', 'REST API'],
     features: [
       'Order tracking from request to fulfillment',
@@ -24,9 +24,9 @@ export const projects = [
     badge: 'Integration Project',
     category: 'Secure API Delivery',
     problem:
-      'Needed secure communication with a government API, including token handling, signed requests, deployment readiness, and dependable issue recovery.',
+      'I worked on secure communication with a government API, including token handling, signed requests, deployment readiness, and dependable issue recovery.',
     outcome:
-      'Delivered a secure integration flow with authentication, production-minded configuration, and support for troubleshooting real request failures.',
+      'I delivered a secure integration flow with authentication, production-ready configuration, and support for troubleshooting real request failures.',
     stack: ['Node.js', 'API Security', 'JWT', 'Deployment'],
     features: [
       'Token-based authentication handling',
@@ -44,9 +44,9 @@ export const projects = [
     badge: 'Mobile Work',
     category: 'Cross-Platform App',
     problem:
-      'Built a mobile experience to extend business workflows beyond desktop environments and support users in more flexible operating contexts.',
+      'I built a mobile experience to extend business workflows beyond desktop environments and support users in more flexible operating contexts.',
     outcome:
-      'Showed delivery capability across mobile UI, API integration, and practical user flows rather than only web-based systems.',
+      'This project showed my ability to deliver mobile UI, API integration, and practical user flows in addition to web systems.',
     stack: ['React Native', 'JavaScript', 'API Integration'],
     features: [
       'Mobile-first user journeys',
@@ -63,9 +63,9 @@ export const projects = [
     badge: 'Institutional System',
     category: 'Management Information System',
     problem:
-      'Worked within a Django MIS environment that required structured modules, clear data flows, and support for institutional operations.',
+      'I worked within a Django MIS environment that required structured modules, clear data flows, and support for institutional operations.',
     outcome:
-      'Strengthened experience with larger system architecture, backend organization, and real operational use cases in education.',
+      'That experience strengthened my understanding of larger system architecture, backend organization, and real operational use cases in education.',
     stack: ['Django', 'Python', 'PostgreSQL', 'Bootstrap'],
     features: [
       'Structured workflows for institutional use',

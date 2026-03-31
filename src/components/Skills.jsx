@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { skillGroups } from '../data/skills'
 
 const serviceDescriptions = [
-  'Backend systems and API logic for production workflows.',
-  'Responsive interfaces for admin panels and data-heavy applications.',
-  'Secure integration work with external services and government APIs.',
-  'Deployment, debugging, and practical support after launch.',
+  'I build backend systems and API logic for production workflows.',
+  'I create responsive interfaces for admin panels and data-heavy applications.',
+  'I handle secure integrations with external services and government APIs.',
+  'I support deployment, debugging, and issue resolution after launch.',
 ]
 
 function Skills() {
@@ -16,7 +16,7 @@ function Skills() {
           <div className="section-pill mx-auto">Services</div>
           <h2 className="section-title centered-title">Core Services</h2>
           <p className="section-subtitle centered-subtitle">
-            A balanced mix of backend delivery, interface building, integrations, and production support.
+            My work combines backend delivery, interface building, integrations, and production support.
           </p>
         </div>
         <div className="row g-4 justify-content-center">

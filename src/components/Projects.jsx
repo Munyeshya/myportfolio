@@ -9,7 +9,7 @@ function Projects() {
           <div className="section-pill mx-auto">Portfolio</div>
           <h2 className="section-title centered-title">Selected Work</h2>
           <p className="section-subtitle centered-subtitle">
-            These projects show system thinking, practical execution, and the ability to support software in production.
+            These projects reflect how I approach delivery, problem solving, and production support.
           </p>
         </div>
         <div className="row g-4">

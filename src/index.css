@@ -142,6 +142,10 @@ img { display: block; max-width: 100%; }
   align-items: center;
 }
 
+#projects {
+  scroll-margin-top: 2rem;
+}
+
 .section-frame,
 .contact-frame {
   min-height: calc(100vh - 10.1rem);

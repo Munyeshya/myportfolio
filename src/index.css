@@ -137,7 +137,7 @@ img { display: block; max-width: 100%; }
   min-height: 100vh;
   position: relative;
   z-index: 1;
-  padding: 6.8rem 0 0.9rem;
+  padding: 6.45rem 0 0.65rem;
   display: flex;
   align-items: center;
 }
@@ -209,10 +209,10 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-text {
-  max-width: 34rem;
+  max-width: 36rem;
   margin: 1.2rem 0 1.75rem;
-  font-size: 1rem;
-  line-height: 1.85;
+  font-size: 1.06rem;
+  line-height: 1.95;
 }
 
 .split-button {
@@ -324,19 +324,20 @@ img { display: block; max-width: 100%; }
   font-size: clamp(2.35rem, 4.7vw, 3.95rem);
   line-height: 0.98;
   margin: 0.8rem 0 0.55rem;
+  white-space: nowrap;
 }
 
 .section-subtitle {
   max-width: 44rem;
-  font-size: 0.92rem;
-  line-height: 1.7;
-  margin: 0 0 0.7rem;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin: 0 0 0.45rem;
 }
 
 .section-copy {
   max-width: 41rem;
-  font-size: 0.98rem;
-  line-height: 1.82;
+  font-size: 0.95rem;
+  line-height: 1.74;
   margin: 0;
 }
 
@@ -352,12 +353,12 @@ img { display: block; max-width: 100%; }
   margin-right: auto;
 }
 
-.section-heading-wrap { margin-bottom: 1.75rem !important; }
+.section-heading-wrap { margin-bottom: 1.25rem !important; }
 
 .section-divider-wrap {
   position: relative;
   z-index: 1;
-  margin: -0.55rem 0 -0.1rem;
+  margin: -0.95rem 0 -0.55rem;
 }
 
 .section-divider-line {
@@ -557,7 +558,7 @@ img { display: block; max-width: 100%; }
 
 .timeline-intro {
   max-width: 30rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .timeline-column {
@@ -628,8 +629,8 @@ img { display: block; max-width: 100%; }
 
 .contact-frame {
   position: relative;
-  min-height: calc(78vh - 2rem);
-  padding: 4.25rem 2.2rem 1.9rem;
+  min-height: calc(70vh - 2rem);
+  padding: 3.4rem 1.8rem 1.35rem;
   overflow: hidden;
 }
 
@@ -649,15 +650,18 @@ img { display: block; max-width: 100%; }
 .contact-form-wrap {
   position: relative;
   z-index: 2;
-  max-width: 34rem;
+  max-width: 30rem;
 }
 
 .contact-pill { margin-bottom: 1rem; }
 .contact-title { max-width: 12ch; }
-.contact-subtitle { max-width: 34rem; margin-bottom: 1.4rem; }
+.contact-subtitle {
+  max-width: 30rem;
+  margin-bottom: 1rem;
+}
 
 .custom-control {
-  min-height: 56px;
+  min-height: 50px;
   border-radius: 0.55rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(17, 15, 15, 0.28);
@@ -672,13 +676,13 @@ img { display: block; max-width: 100%; }
 }
 
 .custom-textarea {
-  min-height: 138px;
+  min-height: 112px;
   resize: none;
 }
 
 .contact-visual {
   position: relative;
-  min-height: 400px;
+  min-height: 320px;
 }
 
 .contact-glow {
@@ -695,9 +699,14 @@ img { display: block; max-width: 100%; }
 .contact-portrait {
   position: relative;
   z-index: 2;
-  max-height: 430px;
+  max-height: 330px;
   margin: 0 auto;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  filter: sepia(0.16) saturate(0.88) hue-rotate(-8deg) contrast(1.02);
+  background: linear-gradient(180deg, rgba(255, 182, 31, 0.16), rgba(36, 31, 31, 0.22));
 }
 
 .footer-bar {
@@ -711,6 +720,7 @@ img { display: block; max-width: 100%; }
   .contact-visual { min-height: 340px; }
   .contact-portrait { max-height: 360px; }
   .hero-copy-shift { padding-left: 1.25rem; }
+  .section-title { white-space: normal; }
 }
 
 @media (max-width: 991px) {
@@ -729,6 +739,7 @@ img { display: block; max-width: 100%; }
   .service-card p { min-height: auto; }
   .contact-frame { padding: 3.5rem 1.5rem 1.25rem; }
   .hero-copy-shift { padding-left: 0.5rem; }
+  .section-title { white-space: normal; }
 }
 
 @media (max-width: 767px) {
@@ -757,6 +768,7 @@ img { display: block; max-width: 100%; }
   .section-divider-wrap { margin: 0.1rem 0 0; }
   .divider-line-glow { width: 84px; }
   .meteor { display: none; }
+  .section-title { white-space: normal; }
 }
 
 @keyframes meteor-fall {

@@ -17,7 +17,7 @@ function Contact() {
             <div className="col-lg-6">
               <div className="contact-form-wrap">
                 <div className="section-pill contact-pill">Contact</div>
-                <h2 className="section-title contact-title">Let&apos;s talk about a role, project, or opportunity.</h2>
+                <h2 className="section-title contact-title">Let&apos;s Connect</h2>
                 <p className="section-subtitle contact-subtitle">
                   Reach me directly by email or use this form layout as the next step for your Formspree setup.
                 </p>

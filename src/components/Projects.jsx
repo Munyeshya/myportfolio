@@ -7,7 +7,7 @@ function Projects() {
       <div className="container section-frame d-flex flex-column justify-content-center">
         <div className="text-center section-heading-wrap mb-5">
           <div className="section-pill mx-auto">Portfolio</div>
-          <h2 className="section-title centered-title">Recent Work That Solves Real Problems</h2>
+          <h2 className="section-title centered-title">Selected Work</h2>
           <p className="section-subtitle centered-subtitle">
             These projects show system thinking, practical execution, and the ability to support software in production.
           </p>

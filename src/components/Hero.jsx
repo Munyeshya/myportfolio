@@ -18,6 +18,7 @@ function Hero() {
               <div className="hero-role-box">Software Engineer</div>
               <p className="hero-text">
                 I build reliable full-stack systems, integrate real APIs, deploy production software, and support users when the work becomes operational.
+                From dashboards and mobile workflows to deployment and troubleshooting, I focus on software that stays useful after launch.
               </p>
               <div className="d-flex flex-wrap gap-3 align-items-center">
                 <a href="#projects" className="split-button text-decoration-none">View My Work</a>

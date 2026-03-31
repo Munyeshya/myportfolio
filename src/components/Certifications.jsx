@@ -5,9 +5,9 @@ function Certifications() {
   return (
     <section id="certifications" className="portfolio-section">
       <div className="container section-frame d-flex flex-column justify-content-center">
-        <div className="text-center mb-5">
+        <div className="text-center section-heading-wrap mb-5">
           <div className="section-pill mx-auto">Documents</div>
-          <h2 className="section-title centered-title">Resume And Certification Files Ready To Review</h2>
+          <h2 className="section-title centered-title">Documents Ready</h2>
         </div>
         <div className="row g-4 justify-content-center">
           {certifications.map((item, index) => (

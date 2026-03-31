@@ -137,7 +137,7 @@ img { display: block; max-width: 100%; }
   min-height: 100vh;
   position: relative;
   z-index: 1;
-  padding: 7.2rem 0 1.35rem;
+  padding: 6.8rem 0 0.9rem;
   display: flex;
   align-items: center;
 }
@@ -321,22 +321,22 @@ img { display: block; max-width: 100%; }
 }
 
 .section-title {
-  font-size: clamp(3rem, 6vw, 4.8rem);
+  font-size: clamp(2.35rem, 4.7vw, 3.95rem);
   line-height: 0.98;
-  margin: 1rem 0 0.8rem;
+  margin: 0.8rem 0 0.55rem;
 }
 
 .section-subtitle {
   max-width: 44rem;
-  font-size: 1rem;
-  line-height: 1.85;
-  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0 0 0.7rem;
 }
 
 .section-copy {
   max-width: 41rem;
-  font-size: 1.04rem;
-  line-height: 1.95;
+  font-size: 0.98rem;
+  line-height: 1.82;
   margin: 0;
 }
 
@@ -352,76 +352,45 @@ img { display: block; max-width: 100%; }
   margin-right: auto;
 }
 
-.section-heading-wrap { margin-bottom: 3rem !important; }
+.section-heading-wrap { margin-bottom: 1.75rem !important; }
 
 .section-divider-wrap {
   position: relative;
   z-index: 1;
-  margin: -0.3rem 0 0.2rem;
+  margin: -0.55rem 0 -0.1rem;
 }
 
-.section-divider {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.35rem 0;
-}
-
-.divider-line {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.16), rgba(255,255,255,0));
-}
-
-.divider-chip {
+.section-divider-line {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.7rem 1.05rem;
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(36, 31, 31, 0.98), rgba(21, 18, 18, 0.98));
-  border: 1px solid rgba(255, 140, 0, 0.2);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  height: 18px;
+  cursor: pointer;
 }
 
-.divider-chip-text {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.08rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--text);
-}
-
-.divider-chip-icon {
-  position: relative;
-  width: 26px;
-  height: 26px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #ff8c00, #ffb61f);
-}
-
-.divider-chip-icon::before,
-.divider-chip-icon::after {
+.section-divider-line::before {
   content: '';
   position: absolute;
-  background: rgba(26, 20, 20, 0.8);
-}
-
-.divider-chip-icon::before {
-  left: 50%;
-  top: 4px;
-  width: 2px;
-  height: 18px;
-  transform: translateX(-50%);
-}
-
-.divider-chip-icon::after {
+  left: 0;
+  right: 0;
   top: 50%;
-  left: 4px;
-  width: 18px;
-  height: 2px;
+  height: 1px;
   transform: translateY(-50%);
+  background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.14), rgba(255,255,255,0));
+}
+
+.divider-line-glow {
+  position: absolute;
+  top: 50%;
+  width: 120px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 182, 31, 0.7), rgba(255, 140, 0, 0.22) 45%, rgba(255, 140, 0, 0));
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.section-divider-line.is-hovered::before {
+  background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,177,37,0.22), rgba(255,255,255,0));
 }
 
 .dark-card,
@@ -588,7 +557,7 @@ img { display: block; max-width: 100%; }
 
 .timeline-intro {
   max-width: 30rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .timeline-column {
@@ -747,14 +716,14 @@ img { display: block; max-width: 100%; }
 @media (max-width: 991px) {
   .portfolio-section {
     min-height: auto;
-    padding: 6.2rem 0 2.7rem;
+    padding: 5.8rem 0 2.2rem;
   }
 
   .section-frame,
   .contact-frame { min-height: auto; }
 
   .section-title,
-  .timeline-heading { font-size: 2.8rem; }
+  .timeline-heading { font-size: 2.4rem; }
 
   .hero-visual-card { min-height: 420px; }
   .service-card p { min-height: auto; }
@@ -785,8 +754,8 @@ img { display: block; max-width: 100%; }
   .timeline-column { padding-left: 1.75rem; }
   .timeline-node { left: -1.45rem; }
   .contact-portrait { max-height: 300px; }
-  .section-divider { gap: 0.7rem; }
-  .divider-chip-text { font-size: 0.95rem; }
+  .section-divider-wrap { margin: 0.1rem 0 0; }
+  .divider-line-glow { width: 84px; }
   .meteor { display: none; }
 }
 

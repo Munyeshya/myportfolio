@@ -21,17 +21,17 @@ function Home() {
       <Navbar />
       <main>
         <Hero />
-        <SectionDivider label="My Expertise" />
+        <SectionDivider />
         <About />
-        <SectionDivider label="Core Services" />
+        <SectionDivider />
         <Skills />
-        <SectionDivider label="Portfolio Highlights" />
+        <SectionDivider />
         <Projects />
-        <SectionDivider label="Experience & Education" />
+        <SectionDivider />
         <Experience />
-        <SectionDivider label="Documents" />
+        <SectionDivider />
         <Certifications />
-        <SectionDivider label="Let's Connect" />
+        <SectionDivider />
         <Contact />
       </main>
       <Footer />

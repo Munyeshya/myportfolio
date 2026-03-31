@@ -1,20 +1,30 @@
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 
-function SectionDivider({ label = 'Explore More' }) {
+function SectionDivider() {
+  const [hovered, setHovered] = useState(false)
+  const [position, setPosition] = useState(50)
+
+  const handleMove = (event) => {
+    const bounds = event.currentTarget.getBoundingClientRect()
+    const next = ((event.clientX - bounds.left) / bounds.width) * 100
+    setPosition(Math.max(0, Math.min(100, next)))
+  }
+
   return (
     <div className="section-divider-wrap" aria-hidden="true">
       <div className="container">
-        <div className="section-divider">
-          <span className="divider-line" />
-          <motion.div
-            className="divider-chip"
-            animate={{ y: [0, -4, 0], boxShadow: ['0 0 0 rgba(255,140,0,0)', '0 0 18px rgba(255,140,0,0.18)', '0 0 0 rgba(255,140,0,0)'] }}
-            transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <span className="divider-chip-text">{label}</span>
-            <span className="divider-chip-icon" />
-          </motion.div>
-          <span className="divider-line" />
+        <div
+          className={`section-divider-line ${hovered ? 'is-hovered' : ''}`}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          onMouseMove={handleMove}
+        >
+          <motion.span
+            className="divider-line-glow"
+            animate={{ opacity: hovered ? 1 : 0, left: `${position}%` }}
+            transition={{ type: 'spring', stiffness: 220, damping: 24, opacity: { duration: 0.18 } }}
+          />
         </div>
       </div>
     </div>

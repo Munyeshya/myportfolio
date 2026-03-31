@@ -14,7 +14,7 @@ function About() {
             className="col-lg-5"
           >
             <div className="section-pill">About</div>
-            <h2 className="section-title">I build software that solves operational problems.</h2>
+            <h2 className="section-title">Operational Software</h2>
             <p className="section-subtitle">
               Engineering, support, and delivery all matter when software is used by real teams.
             </p>

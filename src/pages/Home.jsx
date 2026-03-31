@@ -10,6 +10,17 @@ import Projects from '../components/Projects'
 import SectionDivider from '../components/SectionDivider'
 import Skills from '../components/Skills'
 
+const snowflakes = [
+  { className: 'snowflake snowflake-one', symbol: '•' },
+  { className: 'snowflake snowflake-two', symbol: '•' },
+  { className: 'snowflake snowflake-three', symbol: '•' },
+  { className: 'snowflake snowflake-four', symbol: '•' },
+  { className: 'snowflake snowflake-five', symbol: '•' },
+  { className: 'snowflake snowflake-six', symbol: '•' },
+  { className: 'snowflake snowflake-seven', symbol: '•' },
+  { className: 'snowflake snowflake-eight', symbol: '•' },
+]
+
 function Home() {
   const [showBackToTop, setShowBackToTop] = useState(false)
 
@@ -26,6 +37,11 @@ function Home() {
 
   return (
     <div className="site-page">
+      <div className="snow-layer" aria-hidden="true">
+        {snowflakes.map((flake) => (
+          <span key={flake.className} className={flake.className}>{flake.symbol}</span>
+        ))}
+      </div>
       <div className="meteor-layer" aria-hidden="true">
         <span className="meteor meteor-one" />
         <span className="meteor meteor-two" />

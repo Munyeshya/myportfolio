@@ -75,7 +75,6 @@ function Hero() {
               <span className="hero-spark spark-right" />
               <div className="hero-visual-card">
                 <img src={profile.photo} alt={profile.name} className="hero-portrait" />
-                <span className="hero-portrait-tint" aria-hidden="true" />
               </div>
             </div>
           </motion.div>

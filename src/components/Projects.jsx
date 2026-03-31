@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { projects } from '../data/projects'
 
 function Projects() {
@@ -34,6 +35,9 @@ function Projects() {
                 <h3>{project.title}</h3>
                 <p>{project.problem}</p>
                 <div className="d-flex flex-wrap gap-3 align-items-center mt-3">
+                  <Link to={`/projects/${project.slug}`} className="split-button text-decoration-none">
+                    View Details
+                  </Link>
                   {project.links.map((link) =>
                     link.href ? (
                       <a key={link.label} href={link.href} className="project-link text-decoration-none">

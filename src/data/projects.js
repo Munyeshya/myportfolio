@@ -1,5 +1,6 @@
 export const projects = [
   {
+    slug: 'factory-management-system',
     title: 'Factory Management System',
     badge: 'Flagship Project',
     category: 'Manufacturing Operations',
@@ -14,12 +15,18 @@ export const projects = [
       'Production monitoring across operational steps',
       'Inventory awareness tied to active factory work',
     ],
+    details: [
+      'I worked on a central system that reduced reliance on spreadsheets and disconnected manual processes in the factory environment.',
+      'The platform brought together operational data in one place, making it easier for teams to track progress, follow payment status, and coordinate production decisions.',
+      'This project reflects my ability to connect technical delivery with day-to-day business operations in a production setting.',
+    ],
     links: [
       { label: 'Private Production Project', href: null },
       { label: 'Walkthrough on Request', href: '#contact' },
     ],
   },
   {
+    slug: 'government-api-integration',
     title: 'Government API Integration',
     badge: 'Integration Project',
     category: 'Secure API Delivery',
@@ -34,12 +41,18 @@ export const projects = [
       'Environment-aware deployment setup',
       'Clear debugging of API response issues',
     ],
+    details: [
+      'I worked on secure API communication where reliability and correctness mattered at both the integration and deployment levels.',
+      'The project involved protecting request flows, handling token-based authentication carefully, and making the integration easier to troubleshoot in production.',
+      'It strengthened my experience with external systems where security, stability, and clear debugging are essential.',
+    ],
     links: [
       { label: 'Private Integration', href: null },
       { label: 'Discuss Project', href: '#contact' },
     ],
   },
   {
+    slug: 'react-native-mobile-app',
     title: 'React Native Mobile App',
     badge: 'Mobile Work',
     category: 'Cross-Platform App',
@@ -54,11 +67,17 @@ export const projects = [
       'Reusable components for app screens',
       'Practical mobile UX patterns',
     ],
+    details: [
+      'I built mobile workflows to support users who needed access to the system outside traditional desktop environments.',
+      'The work covered API integration, interface structure, and practical user journeys designed for everyday usage.',
+      'This project demonstrates my flexibility across platforms and my ability to deliver consistent experiences beyond the web.',
+    ],
     links: [
-      { label: 'App Details', href: '#contact' },
+      { label: 'Browse', href: '#contact' },
     ],
   },
   {
+    slug: 'django-mis-system-ughe',
     title: 'Django MIS System for UGHE',
     badge: 'Institutional System',
     category: 'Management Information System',
@@ -72,6 +91,11 @@ export const projects = [
       'Backend modules for operational data',
       'Scalable organization of system features',
       'Experience in larger software environments',
+    ],
+    details: [
+      'I contributed within a larger Django-based MIS environment where structure, consistency, and maintainability were important.',
+      'The system supported institutional operations, which required clearer data handling and disciplined backend organization.',
+      'This work strengthened my experience in education systems and in software that supports complex organizational processes.',
     ],
     links: [
       { label: 'Project Summary', href: '#contact' },

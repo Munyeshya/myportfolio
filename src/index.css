@@ -208,7 +208,9 @@ img { display: block; max-width: 100%; }
 .timeline-box p,
 .pricing-card p,
 .custom-control,
-.footer-bar p {
+.footer-bar p,
+.footer-copy,
+.footer-bottom p {
   color: var(--muted);
 }
 
@@ -944,9 +946,153 @@ img { display: block; max-width: 100%; }
   background: linear-gradient(180deg, rgba(255, 182, 31, 0.16), rgba(36, 31, 31, 0.22));
 }
 
-.footer-bar {
-  padding: 1rem 0 2rem;
-  text-align: center;
+.site-footer {
+  position: relative;
+  z-index: 1;
+  padding: 1.2rem 0 2.2rem;
+}
+
+.footer-shell {
+  padding: 2.2rem 2rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at top right, rgba(255, 140, 0, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(34, 29, 29, 0.98), rgba(23, 20, 20, 0.98));
+  box-shadow: var(--shadow);
+}
+
+.footer-brand h3,
+.footer-block h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.footer-logo {
+  margin-bottom: 0.35rem;
+}
+
+.footer-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.footer-brand h3 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 0.98;
+  max-width: 12ch;
+  margin-bottom: 0.9rem;
+}
+
+.footer-copy {
+  max-width: 34rem;
+  margin-bottom: 1.35rem;
+  line-height: 1.9;
+}
+
+.footer-cta {
+  min-width: 238px;
+}
+
+.footer-block {
+  padding-top: 1rem;
+}
+
+.footer-block h4 {
+  margin-bottom: 1rem;
+  font-size: 1.65rem;
+}
+
+.footer-link-list,
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-link,
+.footer-top-link {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-link {
+  width: fit-content;
+  font-weight: 700;
+}
+
+.footer-link:hover,
+.footer-top-link:hover {
+  color: var(--accent-2);
+  transform: translateX(2px);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.footer-contact-item:hover {
+  border-color: rgba(255, 140, 0, 0.36);
+  background: rgba(255, 140, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.footer-contact-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  flex: 0 0 2.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  color: var(--accent);
+  background: rgba(255, 140, 0, 0.11);
+  border: 1px solid rgba(255, 140, 0, 0.22);
+}
+
+.footer-contact-icon svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.footer-contact-item small {
+  display: block;
+  margin-bottom: 0.12rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+}
+
+.footer-contact-item strong {
+  display: block;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.footer-bottom {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 @media (max-width: 1199px) {
@@ -963,6 +1109,7 @@ img { display: block; max-width: 100%; }
   }
   .hero-copy-shift { padding-left: 1.25rem; }
   .section-title { white-space: normal; }
+  .footer-brand h3 { max-width: none; }
 }
 
 @media (max-width: 991px) {
@@ -986,6 +1133,17 @@ img { display: block; max-width: 100%; }
   .contact-frame { padding: 3.5rem 1.5rem 1.25rem; }
   .hero-copy-shift { padding-left: 0.5rem; }
   .section-title { white-space: normal; }
+  .footer-shell {
+    padding: 1.75rem 1.35rem 1rem;
+    border-radius: 1.5rem;
+  }
+  .footer-block {
+    padding-top: 0.25rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .project-detail-page {
     padding: 7rem 0 2rem;
   }
@@ -1007,6 +1165,7 @@ img { display: block; max-width: 100%; }
 
   .portfolio-section { padding: 2rem 0; }
   .site-navbar { padding: 0 1rem; }
+  .site-footer { padding: 0.75rem 0 1.6rem; }
   .site-logo { font-size: 2.35rem; }
   .talk-button { min-width: 132px; padding: 0.9rem 1.1rem; }
   .hero-title { font-size: 3rem; }
@@ -1045,6 +1204,19 @@ img { display: block; max-width: 100%; }
   .divider-line-glow { width: 84px; }
   .meteor { display: none; }
   .section-title { white-space: normal; }
+  .footer-shell {
+    padding: 1.5rem 1rem 0.9rem;
+  }
+  .footer-brand h3 {
+    font-size: 1.9rem;
+    max-width: 100%;
+  }
+  .footer-cta {
+    min-width: min(100%, 240px);
+  }
+  .footer-contact-item {
+    padding: 0.78rem 0.8rem;
+  }
   .document-modal-head {
     flex-direction: column;
   }

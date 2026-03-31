@@ -40,7 +40,10 @@ function Contact() {
             <div className="col-lg-6">
               <div className="contact-visual text-center">
                 <div className="contact-glow" />
-                <img src={profile.photo} alt={profile.name} className="contact-portrait" />
+                <div className="contact-portrait-frame">
+                  <img src={profile.photo} alt={profile.name} className="contact-portrait" />
+                  <span className="contact-portrait-tint" aria-hidden="true" />
+                </div>
               </div>
             </div>
           </div>

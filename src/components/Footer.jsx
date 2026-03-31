@@ -51,8 +51,8 @@ function Footer() {
           <div className="row g-4 align-items-start">
             <div className="col-lg-5">
               <div className="footer-brand">
-                <a href="/#home" className="site-logo footer-logo">
-                  <span className="site-logo-mark">A</span>ntux
+                <a href="/#home" className="footer-name-mark">
+                  <span className="footer-name-accent">B</span>eni Obed
                 </a>
                 <p className="footer-kicker">Software Engineer</p>
                 <h3>Building practical systems that teams can rely on.</h3>
@@ -100,7 +100,6 @@ function Footer() {
             <p className="mb-0">
               {new Date().getFullYear()} Munyeshya Beni Obed. Designed to present production-ready software work clearly and professionally.
             </p>
-            <a href="/#home" className="footer-top-link">Back to top</a>
           </div>
         </div>
       </div>

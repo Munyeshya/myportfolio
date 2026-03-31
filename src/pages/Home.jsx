@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import About from '../components/About'
 import Certifications from '../components/Certifications'
 import Contact from '../components/Contact'
@@ -10,6 +11,19 @@ import SectionDivider from '../components/SectionDivider'
 import Skills from '../components/Skills'
 
 function Home() {
+  const [showBackToTop, setShowBackToTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 160)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <div className="site-page">
       <div className="meteor-layer" aria-hidden="true">
@@ -37,6 +51,16 @@ function Home() {
         <Contact />
       </main>
       <Footer />
+      <a
+        href="/#home"
+        className={`floating-top-link ${showBackToTop ? 'is-visible' : ''}`}
+        aria-label="Back to top"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 18V6" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
+          <path d="m7.5 10.5 4.5-4.5 4.5 4.5" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </a>
     </div>
   )
 }

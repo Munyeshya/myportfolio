@@ -404,7 +404,7 @@ img { display: block; max-width: 100%; }
 }
 
 .divider-spacer-after-projects {
-  margin-top: 0.8rem;
+  margin: 0.8rem 0;
 }
 
 .section-divider-line {
@@ -850,7 +850,7 @@ img { display: block; max-width: 100%; }
     width: min(100%, 240px);
   }
   .section-divider-wrap { margin: 0.1rem 0 0; }
-  .divider-spacer-after-projects { margin-top: 0.45rem; }
+  .divider-spacer-after-projects { margin: 0.45rem 0; }
   .divider-line-glow { width: 84px; }
   .meteor { display: none; }
   .section-title { white-space: normal; }

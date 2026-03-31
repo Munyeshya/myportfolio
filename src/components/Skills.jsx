@@ -12,9 +12,12 @@ function Skills() {
   return (
     <section id="skills" className="portfolio-section">
       <div className="container section-frame d-flex flex-column justify-content-center">
-        <div className="text-center mb-5">
+        <div className="text-center section-heading-wrap mb-5">
           <div className="section-pill mx-auto">Services</div>
           <h2 className="section-title centered-title">What I Bring To A Team</h2>
+          <p className="section-subtitle centered-subtitle">
+            A balanced mix of backend delivery, interface building, integrations, and production support.
+          </p>
         </div>
         <div className="row g-4 justify-content-center">
           {skillGroups.map((group, index) => (

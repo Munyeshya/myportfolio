@@ -403,6 +403,10 @@ img { display: block; max-width: 100%; }
   margin: -0.95rem 0 -0.55rem;
 }
 
+.divider-spacer-after-projects {
+  margin-top: 0.8rem;
+}
+
 .section-divider-line {
   position: relative;
   height: 18px;
@@ -846,6 +850,7 @@ img { display: block; max-width: 100%; }
     width: min(100%, 240px);
   }
   .section-divider-wrap { margin: 0.1rem 0 0; }
+  .divider-spacer-after-projects { margin-top: 0.45rem; }
   .divider-line-glow { width: 84px; }
   .meteor { display: none; }
   .section-title { white-space: normal; }

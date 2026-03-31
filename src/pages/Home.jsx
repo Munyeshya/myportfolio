@@ -27,7 +27,9 @@ function Home() {
         <Skills />
         <SectionDivider />
         <Projects />
-        <SectionDivider />
+        <div className="divider-spacer-after-projects">
+          <SectionDivider />
+        </div>
         <Experience />
         <SectionDivider />
         <Certifications />

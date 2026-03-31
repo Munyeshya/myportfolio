@@ -22,7 +22,7 @@ function Navbar() {
         <div className="site-navbar d-flex align-items-center justify-content-between">
           <a href="/#home" className="site-logo text-decoration-none">
             <span className="site-logo-mark">B</span>
-            <span>{profile.name.split(' ')[1]} {profile.name.split(' ')[2]}</span>
+            <span>eni Obed</span>
           </a>
 
           <nav className="d-none d-lg-flex align-items-center gap-4">

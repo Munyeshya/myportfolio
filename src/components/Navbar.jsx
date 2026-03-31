@@ -10,7 +10,7 @@ const navItems = [
   ['Contact', '/#contact'],
 ]
 
-function Navbar() {
+function Navbar() {vico
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}

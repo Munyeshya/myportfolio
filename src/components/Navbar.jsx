@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { profile } from '../data/profile'
 
 const navItems = [
   ['Home', '/#home'],

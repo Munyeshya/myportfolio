@@ -35,12 +35,6 @@ export const profile = {
       award: 'Advanced Diploma in Software Development',
     },
   ],
-  contactLinks: [
-    { label: 'Email', value: 'beniobed02@gmail.com', href: 'mailto:beniobed02@gmail.com' },
-    { label: 'Phone', value: '+250 786 042 755', href: 'tel:+250786042755' },
-    { label: 'Location', value: 'Kigali, Rwanda', href: '#' },
-    { label: 'Resume', value: 'Download CV', href: '/assets/MUNYESHYA_Beni_Obed_Resume.pdf' },
-  ],
 }
 
 export const experience = [

@@ -3,48 +3,67 @@ import { profile } from '../data/profile'
 
 function About() {
   return (
-    <motion.section
-      id="about"
-      initial={{ opacity: 0, y: 26 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.55 }}
-      className="section-split"
-    >
-      <div>
-        <p className="section-kicker">About Me</p>
-        <h2 className="section-heading">I build systems that handle real business pressure and still stay understandable.</h2>
-      </div>
-      <div className="content-grid two-up">
-        <article className="panel-card span-two">
-          <p className="body-copy">
-            My work combines engineering, API integration, deployment support, and user communication. I enjoy building software that solves operational problems and remains maintainable after launch. That means clear architecture, practical interfaces, and support-minded delivery when issues show up in production.
-          </p>
-        </article>
-        <article className="panel-card">
-          <p className="mini-kicker">Industries</p>
-          <div className="tag-cloud">
-            {profile.industries.map((item) => (
-              <span key={item} className="soft-tag">
-                {item}
-              </span>
-            ))}
-          </div>
-        </article>
-        <article className="panel-card">
-          <p className="mini-kicker">Education</p>
-          <div className="stack-list">
-            {profile.education.map((item) => (
-              <div key={item.school} className="stack-row">
-                <strong>{item.award}</strong>
-                <span>{item.school}</span>
-                <small>{item.period}</small>
+    <section id="about" className="portfolio-section">
+      <div className="container section-frame d-flex align-items-center">
+        <div className="row g-4 align-items-center w-100">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5 }}
+            className="col-lg-5"
+          >
+            <div className="section-pill">About</div>
+            <h2 className="sectionle">I build software that solves operational problems.</h2>
+            <p className="section-copy">
+              {profile.summary}
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.08 }}
+            className="col-lg-7"
+          >
+            <div className="row g-4">
+              <div className="col-md-6">
+                <div className="dark-card stat-card h-100">
+                  <h3>Strengths</h3>
+                  <ul className="plain-list">
+                    {profile.strengths.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            ))}
-          </div>
-        </article>
+              <div className="col-md-6">
+                <div className="dark-card stat-card h-100">
+                  <h3>Details</h3>
+                  <ul className="plain-list">
+                    <li>{profile.location}</li>
+                    <li>{profile.address}</li>
+                    <li>{profile.email}</li>
+                    <li>{profile.phone}</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="dark-card stat-card">
+                  <h3>Industry Exposure</h3>
+                  <div className="d-flex flex-wrap gap-2 mt-3">
+                    {profile.industries.map((item) => (
+                      <span key={item} className="skill-badge">{item}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
-    </motion.section>
+    </section>
   )
 }
 

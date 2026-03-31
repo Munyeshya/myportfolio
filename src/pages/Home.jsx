@@ -10,20 +10,18 @@ import Skills from '../components/Skills'
 
 function Home() {
   return (
-    <div className="min-h-screen">
-      <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
-        <Navbar />
-        <main className="space-y-24 pb-16 sm:space-y-28 sm:pb-24">
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Experience />
-          <Certifications />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+    <div className="site-page">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Certifications />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   )
 }

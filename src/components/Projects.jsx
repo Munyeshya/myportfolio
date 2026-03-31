@@ -3,65 +3,50 @@ import { projects } from '../data/projects'
 
 function Projects() {
   return (
-    <motion.section
-      id="projects"
-      initial={{ opacity: 0, y: 26 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.55 }}
-    >
-      <div className="section-head-row">
-        <div>
-          <p className="section-kicker">Featured Projects</p>
-          <h2 className="section-heading">The work recruiters should notice first: shipped systems, secure integrations, and practical delivery.</h2>
+    <section id="projects" className="portfolio-section">
+      <div className="container section-frame d-flex flex-column justify-content-center">
+        <div className="text-center mb-5">
+          <div className="section-pill mx-auto">Portfolio</div>
+          <h2 className="section-title centered-title">Recent Work That Solves Real Problems</h2>
+        </div>
+        <div className="row g-4">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.45, delay: index * 0.05 }}
+              className="col-lg-6"
+            >
+              <div className="project-card h-100">
+                <div className={`project-preview preview-${index + 1}`}>
+                  <span className="project-status">{project.badge}</span>
+                </div>
+                <div className="d-flex flex-wrap gap-2 mt-3 mb-3">
+                  {project.stack.slice(0, 3).map((item) => (
+                    <span key={item} className="skill-badge">{item}</span>
+                  ))}
+                </div>
+                <h3>{project.title}</h3>
+                <p>{project.problem}</p>
+                <div className="d-flex flex-wrap gap-3 align-items-center mt-3">
+                  {project.links.map((link) =>
+                    link.href ? (
+                      <a key={link.label} href={link.href} className="project-link text-decoration-none">
+                        {link.label}
+                      </a>
+                    ) : (
+                      <span key={link.label} className="private-chip">{link.label}</span>
+                    ),
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
-      <div className="project-grid">
-        {projects.map((project, index) => (
-          <motion.article
-            key={project.title}
-            whileHover={{ y: -8 }}
-            transition={{ type: 'spring', stiffness: 220, damping: 22 }}
-            className={`project-card ${index === 0 ? 'project-card-large' : ''}`}
-          >
-            <div className="project-visual">
-              <span className="badge-chip">{project.badge}</span>
-              <h3>{project.title}</h3>
-              <p>{project.category}</p>
-              <div className="project-stack">
-                {project.stack.map((item) => (
-                  <span key={item}>{item}</span>
-                ))}
-              </div>
-            </div>
-            <div className="project-copy">
-              <p className="mini-kicker">Problem Solved</p>
-              <p className="body-copy compact">{project.problem}</p>
-              <p className="mini-kicker">What It Demonstrates</p>
-              <p className="body-copy compact">{project.outcome}</p>
-              <ul className="feature-list">
-                {project.features.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <div className="link-row">
-                {project.links.map((link) =>
-                  link.href ? (
-                    <a key={link.label} href={link.href} className="small-action">
-                      {link.label}
-                    </a>
-                  ) : (
-                    <span key={link.label} className="muted-pill">
-                      {link.label}
-                    </span>
-                  ),
-                )}
-              </div>
-            </div>
-          </motion.article>
-        ))}
-      </div>
-    </motion.section>
+    </section>
   )
 }
 

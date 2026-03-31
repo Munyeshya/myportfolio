@@ -3,70 +3,47 @@ import { profile } from '../data/profile'
 
 function Hero() {
   return (
-    <section id="home" className="hero-wrap">
-      <div className="hero-grid">
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65 }}
-          className="hero-copy"
-        >
-          <p className="eyebrow">Available for junior roles, internships, and freelance work</p>
-          <h1 className="hero-title">
-            {profile.name}
-            <span>{profile.title}</span>
-          </h1>
-          <p className="hero-summary">{profile.summary}</p>
-          <div className="hero-actions">
-            <a href="#projects" className="primary-button">
-              View Projects
-            </a>
-            <a href={profile.resume} className="secondary-button">
-              Download CV
-            </a>
-            <a href="#contact" className="ghost-button">
-              Contact Me
-            </a>
-          </div>
-          <div className="hero-points">
-            {profile.strengths.map((item) => (
-              <div key={item} className="info-pill">
-                {item}
+    <section id="home" className="portfolio-section hero-section">
+      <div className="container section-frame hero-frame">
+        <div className="row g-4 align-items-center h-100">
+          <motion.div
+            initial={{ opacity: 0, x: -28 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.35 }}
+            transition={{ duration: 0.55 }}
+            className="col-lg-6"
+          >
+            <div className="hero-copy pe-lg-4">
+              <h1 className="hero-title">Hey, I&apos;m Beni</h1>
+              <div className="hero-role-box">Software Engineer</div>
+              <p className="hero-text">
+                I build reliable full-stack systems, integrate real APIs, deploy production software, and support users when the work becomes operational.
+              </p>
+              <div className="d-flex flex-wrap gap-3 align-items-center">
+                <a href="#projects" className="split-button text-decoration-none">View My Work</a>
+                <a href={profile.resume} className="icon-circle text-decoration-none">CV</a>
+                <a href={`mailto:${profile.email}`} className="icon-circle text-decoration-none">@</a>
+                <a href={`tel:${profile.phone.replace(/\s+/g, '')}`} className="icon-circle text-decoration-none">Call</a>
               </div>
-            ))}
-          </div>
-        </motion.div>
+            </div>
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.75, delay: 0.1 }}
-          className="hero-visual"
-        >
-          <div className="portrait-card">
-            <div className="portrait-frame">
-              <img src={profile.photo} alt={profile.name} className="portrait-image" />
-            </div>
-            <div className="portrait-meta">
-              <div>
-                <p className="meta-label">Location</p>
-                <p className="meta-value">{profile.location}</p>
-              </div>
-              <div>
-                <p className="meta-label">Focus</p>
-                <p className="meta-value">Production-ready systems</p>
+          <motion.div
+            initial={{ opacity: 0, x: 28 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.35 }}
+            transition={{ duration: 0.55 }}
+            className="col-lg-6"
+          >
+            <div className="hero-visual-shell">
+              <span className="hero-spark spark-top" />
+              <span className="hero-spark spark-right" />
+              <div className="hero-visual-card">
+                <img src={profile.photo} alt={profile.name} className="hero-portrait" />
               </div>
             </div>
-          </div>
-          <div className="metric-grid">
-            {profile.metrics.map((item) => (
-              <div key={item.label} className="metric-card">
-                <strong>{item.value}</strong>
-                <span>{item.label}</span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )

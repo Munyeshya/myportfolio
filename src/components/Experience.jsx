@@ -1,61 +1,35 @@
 import { motion } from 'framer-motion'
-
-const roles = [
-  {
-    period: '2023 - Now',
-    title: 'Software Developer',
-    company: 'Nexcode',
-    achievements: [
-      'Built and supported software features tied to business workflows and client delivery.',
-      'Worked across implementation, debugging, and release support to keep projects moving.',
-    ],
-  },
-  {
-    period: '2023 - 2024',
-    title: 'Software Developer',
-    company: 'IDA',
-    achievements: [
-      'Delivered application functionality with attention to maintainability and practical user needs.',
-      'Contributed to integrations and problem solving in active project environments.',
-    ],
-  },
-  {
-    period: '2022 - 2024',
-    title: 'Full Stack Developer',
-    company: 'Rwanda Special Materials',
-    achievements: [
-      'Built the factory management system covering orders, payments, production, and inventory.',
-      'Supported real operational users and translated factory processes into working software.',
-    ],
-  },
-]
+import { experience, profile } from '../data/profile'
 
 function Experience() {
   return (
     <motion.section
       id="experience"
-      initial={{ opacity: 0, y: 32 }}
+      initial={{ opacity: 0, y: 26 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.55 }}
+      className="section-split"
     >
-      <div className="max-w-3xl">
-        <p className="section-label">Experience</p>
-        <h2 className="section-title">A track record of shipping systems and supporting them in real environments.</h2>
+      <div>
+        <p className="section-kicker">Experience</p>
+        <h2 className="section-heading">Built through delivery, debugging, and supporting software once users depend on it.</h2>
+        <div className="panel-card mt-card">
+          <p className="mini-kicker">Based In</p>
+          <p className="body-copy compact">{profile.address}</p>
+        </div>
       </div>
-      <div className="mt-10 space-y-6">
-        {roles.map((role) => (
-          <article key={`${role.company}-${role.period}`} className="panel grid gap-5 lg:grid-cols-[220px_1fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-indigo-300">{role.period}</p>
-            </div>
-            <div>
-              <h3 className="card-title">{role.title} - {role.company}</h3>
-              <ul className="mt-4 grid gap-3">
-                {role.achievements.map((item) => (
-                  <li key={item} className="text-sm leading-7 text-slate-300">
-                    {item}
-                  </li>
+      <div className="timeline-wrap">
+        {experience.map((item) => (
+          <article key={`${item.company}-${item.period}`} className="timeline-card">
+            <div className="timeline-dot" />
+            <div className="timeline-content">
+              <p className="timeline-period">{item.period}</p>
+              <h3>{item.title}</h3>
+              <span>{item.company}</span>
+              <ul>
+                {item.achievements.map((point) => (
+                  <li key={point}>{point}</li>
                 ))}
               </ul>
             </div>

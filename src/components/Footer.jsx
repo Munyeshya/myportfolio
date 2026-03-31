@@ -1,7 +1,9 @@
+import { profile } from '../data/profile'
+
 function Footer() {
   return (
-    <footer className="border-t border-white/10 py-8 text-center text-sm text-slate-400">
-      <p>Built with React, Vite, TailwindCSS, React Router, and Framer Motion.</p>
+    <footer className="footer-shell">
+      <p>{profile.name} - Software Engineer focused on practical systems that work in production.</p>
     </footer>
   )
 }

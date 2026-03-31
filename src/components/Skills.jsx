@@ -5,24 +5,29 @@ function Skills() {
   return (
     <motion.section
       id="skills"
-      initial={{ opacity: 0, y: 32 }}
+      initial={{ opacity: 0, y: 26 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.55 }}
     >
-      <div className="max-w-3xl">
-        <p className="section-label">Skills</p>
-        <h2 className="section-title">A practical stack for building, shipping, and supporting applications.</h2>
+      <div className="section-head-row">
+        <div>
+          <p className="section-kicker">Core Skills</p>
+          <h2 className="section-heading">A practical stack for backend work, interfaces, deployments, and support.</h2>
+        </div>
       </div>
-      <div className="mt-10 grid gap-6 lg:grid-cols-2">
+      <div className="skills-layout">
         {skillGroups.map((group) => (
-          <article key={group.title} className="panel">
-            <h3 className="card-title">{group.title}</h3>
-            <div className="mt-5 flex flex-wrap gap-3">
+          <article key={group.title} className="panel-card">
+            <div className="skill-header">
+              <h3>{group.title}</h3>
+            </div>
+            <div className="skill-list">
               {group.items.map((item) => (
-                <span key={item} className="rounded-full border border-indigo-400/20 bg-indigo-500/10 px-4 py-2 text-sm text-indigo-100">
-                  {item}
-                </span>
+                <div key={item.name} className="skill-row">
+                  <span>{item.name}</span>
+                  <small>{item.level}</small>
+                </div>
               ))}
             </div>
           </article>

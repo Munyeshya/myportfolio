@@ -1,32 +1,47 @@
 import { motion } from 'framer-motion'
+import { profile } from '../data/profile'
 
 function About() {
   return (
     <motion.section
       id="about"
-      initial={{ opacity: 0, y: 32 }}
+      initial={{ opacity: 0, y: 26 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.55 }}
-      className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]"
+      className="section-split"
     >
       <div>
-        <p className="section-label">About Me</p>
-        <h2 className="section-title">I build software that solves operational problems, not just screens.</h2>
+        <p className="section-kicker">About Me</p>
+        <h2 className="section-heading">I build systems that handle real business pressure and still stay understandable.</h2>
       </div>
-      <div className="grid gap-5 sm:grid-cols-2">
-        <article className="panel sm:col-span-2">
-          <p className="text-base leading-8 text-slate-300">
-            I am a software engineer focused on building practical systems for organizations that need reliability, visibility, and support after launch. My work spans web applications, mobile apps, integrations, and deployment environments where software has to keep working for real users.
+      <div className="content-grid two-up">
+        <article className="panel-card span-two">
+          <p className="body-copy">
+            My work combines engineering, API integration, deployment support, and user communication. I enjoy building software that solves operational problems and remains maintainable after launch. That means clear architecture, practical interfaces, and support-minded delivery when issues show up in production.
           </p>
         </article>
-        <article className="panel">
-          <h3 className="card-title">Strengths</h3>
-          <p className="card-copy">Full stack delivery, debugging, API integration, production support, and translating business workflows into software teams can trust.</p>
+        <article className="panel-card">
+          <p className="mini-kicker">Industries</p>
+          <div className="tag-cloud">
+            {profile.industries.map((item) => (
+              <span key={item} className="soft-tag">
+                {item}
+              </span>
+            ))}
+          </div>
         </article>
-        <article className="panel">
-          <h3 className="card-title">Industries Worked With</h3>
-          <p className="card-copy">Manufacturing, public-sector integration, education systems, and internal management platforms.</p>
+        <article className="panel-card">
+          <p className="mini-kicker">Education</p>
+          <div className="stack-list">
+            {profile.education.map((item) => (
+              <div key={item.school} className="stack-row">
+                <strong>{item.award}</strong>
+                <span>{item.school}</span>
+                <small>{item.period}</small>
+              </div>
+            ))}
+          </div>
         </article>
       </div>
     </motion.section>

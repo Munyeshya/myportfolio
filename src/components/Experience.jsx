@@ -8,6 +8,9 @@ function Experience() {
         <div className="row g-4 w-100">
           <div className="col-lg-6">
             <div className="timeline-heading">My Expertise</div>
+            <p className="section-subtitle timeline-intro">
+              Roles where I shipped features, debugged active systems, and supported real users.
+            </p>
             <div className="timeline-column">
               {experience.map((item, index) => (
                 <motion.div
@@ -40,6 +43,9 @@ function Experience() {
 
           <div className="col-lg-6">
             <div className="timeline-heading">Education Background</div>
+            <p className="section-subtitle timeline-intro">
+              Formal training that supports my practical engineering work and continuous learning.
+            </p>
             <div className="timeline-column">
               {profile.education.map((item, index) => (
                 <motion.div

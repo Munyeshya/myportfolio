@@ -5,9 +5,12 @@ function Projects() {
   return (
     <section id="projects" className="portfolio-section">
       <div className="container section-frame d-flex flex-column justify-content-center">
-        <div className="text-center mb-5">
+        <div className="text-center section-heading-wrap mb-5">
           <div className="section-pill mx-auto">Portfolio</div>
           <h2 className="section-title centered-title">Recent Work That Solves Real Problems</h2>
+          <p className="section-subtitle centered-subtitle">
+            These projects show system thinking, practical execution, and the ability to support software in production.
+          </p>
         </div>
         <div className="row g-4">
           {projects.map((project, index) => (

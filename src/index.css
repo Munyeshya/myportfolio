@@ -262,11 +262,15 @@ img { display: block; max-width: 100%; }
 .hero-visual-shell {
   position: relative;
   padding: 0.35rem 0 0.35rem 0.35rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero-visual-card {
   position: relative;
   min-height: 560px;
+  width: 100%;
+  max-width: 100%;
   border-radius: 2rem;
   overflow: hidden;
   background: linear-gradient(180deg, var(--accent-2), #ffb000 65%, #f8a900 100%);
@@ -683,6 +687,9 @@ img { display: block; max-width: 100%; }
 .contact-visual {
   position: relative;
   min-height: 320px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .contact-glow {
@@ -700,6 +707,7 @@ img { display: block; max-width: 100%; }
   position: relative;
   z-index: 2;
   max-height: 330px;
+  width: min(100%, 320px);
   margin: 0 auto;
   object-fit: cover;
   border-radius: 2rem;
@@ -715,10 +723,17 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 1199px) {
-  .hero-visual-card { min-height: 490px; }
+  .hero-visual-card {
+    min-height: 490px;
+    max-width: 460px;
+    margin-left: auto;
+  }
   .service-card { min-height: 355px; }
   .contact-visual { min-height: 340px; }
-  .contact-portrait { max-height: 360px; }
+  .contact-portrait {
+    max-height: 300px;
+    width: min(100%, 280px);
+  }
   .hero-copy-shift { padding-left: 1.25rem; }
   .section-title { white-space: normal; }
 }
@@ -735,7 +750,11 @@ img { display: block; max-width: 100%; }
   .section-title,
   .timeline-heading { font-size: 2.4rem; }
 
-  .hero-visual-card { min-height: 420px; }
+  .hero-visual-card {
+    min-height: 420px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
   .service-card p { min-height: auto; }
   .contact-frame { padding: 3.5rem 1.5rem 1.25rem; }
   .hero-copy-shift { padding-left: 0.5rem; }
@@ -748,27 +767,76 @@ img { display: block; max-width: 100%; }
     padding-top: 1rem;
   }
 
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .portfolio-section { padding: 2rem 0; }
   .site-navbar { padding: 0 1rem; }
   .site-logo { font-size: 2.35rem; }
   .talk-button { min-width: 132px; padding: 0.9rem 1.1rem; }
   .hero-title { font-size: 3rem; }
   .hero-copy { padding: 1rem 0; }
+  .hero-visual-shell {
+    padding: 0;
+  }
   .hero-visual-card,
   .contact-visual { min-height: 320px; }
-  .hero-visual-card { min-height: 340px; }
+  .hero-visual-card {
+    min-height: 340px;
+    max-width: 100%;
+  }
   .contact-frame {
     min-height: auto;
-    padding: 3rem 1rem 1rem;
+    padding: 3rem 1.2rem 1.2rem;
   }
   .contact-outline { font-size: 4rem; top: 1.5rem; }
   .timeline-column { padding-left: 1.75rem; }
   .timeline-node { left: -1.45rem; }
-  .contact-portrait { max-height: 300px; }
+  .contact-portrait {
+    max-height: 260px;
+    width: min(100%, 240px);
+  }
   .section-divider-wrap { margin: 0.1rem 0 0; }
   .divider-line-glow { width: 84px; }
   .meteor { display: none; }
   .section-title { white-space: normal; }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-visual-card {
+    min-height: 290px;
+    border-radius: 1.4rem;
+  }
+
+  .hero-portrait {
+    object-position: center 18%;
+  }
+
+  .contact-visual {
+    min-height: 250px;
+  }
+
+  .contact-portrait {
+    max-height: 220px;
+    width: min(100%, 200px);
+    border-radius: 1.35rem;
+  }
+
+  .dark-card,
+  .service-card,
+  .project-card,
+  .pricing-card,
+  .timeline-box,
+  .contact-frame {
+    border-radius: 1.25rem;
+  }
 }
 
 @keyframes meteor-fall {

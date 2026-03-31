@@ -736,7 +736,7 @@ img { display: block; max-width: 100%; }
 .timeline-column::before {
   content: '';
   position: absolute;
-  left: 0.55rem;
+  left: 0.96rem;
   top: 0.2rem;
   bottom: 0.2rem;
   width: 2px;
@@ -1244,6 +1244,7 @@ img { display: block; max-width: 100%; }
   }
   .contact-outline { font-size: 4rem; top: 1.5rem; }
   .timeline-column { padding-left: 1.75rem; }
+  .timeline-column::before { left: 0.86rem; }
   .timeline-node { left: -1.45rem; }
   .contact-portrait {
     max-height: 260px;

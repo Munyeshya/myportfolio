@@ -29,9 +29,9 @@ function Certifications() {
                 </div>
                 <div className="price-copy">{item.year}</div>
                 <ul className="plain-list compact-list mt-3">
-                  <li>Recruiter-ready document access</li>
-                  <li>Attached directly inside the portfolio</li>
-                  <li>Useful for quick review and follow-up</li>
+                  <li>Available for quick review during screening</li>
+                  <li>Included directly in my portfolio for easy access</li>
+                  <li>Useful for follow-up conversations and shortlisting</li>
                 </ul>
                 <div className="mt-4">
                   <a href={item.file} className="split-button text-decoration-none">Open Document</a>

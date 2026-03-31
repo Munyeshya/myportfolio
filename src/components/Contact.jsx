@@ -19,7 +19,7 @@ function Contact() {
                 <div className="section-pill contact-pill">Contact</div>
                 <h2 className="section-title contact-title">Let&apos;s Connect</h2>
                 <p className="section-subtitle contact-subtitle">
-                  Reach me directly by email or use this form layout as the next step for your Formspree setup.
+                  You can reach me directly by email, or use this form layout as the next step when the contact form is connected.
                 </p>
                 <input className="form-control custom-control mb-3" placeholder="Name" />
                 <div className="row g-3 mb-3">
@@ -30,7 +30,7 @@ function Contact() {
                     <input className="form-control custom-control" placeholder="Phone" defaultValue={profile.phone} />
                   </div>
                 </div>
-                <textarea className="form-control custom-control custom-textarea mb-3" placeholder="Tell us about project or opportunity" />
+                <textarea className="form-control custom-control custom-textarea mb-3" placeholder="Tell me about the role, project, or opportunity" />
                 <div className="d-flex flex-wrap gap-3 align-items-center">
                   <a href={`mailto:${profile.email}`} className="split-button text-decoration-none">Get In Touch</a>
                   <a href={profile.resume} className="project-link text-decoration-none">Download CV</a>

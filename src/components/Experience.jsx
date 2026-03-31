@@ -9,7 +9,7 @@ function Experience() {
           <div className="col-lg-6">
             <div className="timeline-heading">My Expertise</div>
             <p className="section-subtitle timeline-intro">
-              Roles where I shipped features, debugged active systems, and supported real users.
+              These are the roles where I shipped features, solved issues, and supported real users.
             </p>
             <div className="timeline-column">
               {experience.map((item, index) => (
@@ -44,7 +44,7 @@ function Experience() {
           <div className="col-lg-6">
             <div className="timeline-heading">Education Background</div>
             <p className="section-subtitle timeline-intro">
-              Formal training that supports my practical engineering work and continuous learning.
+              My formal training supports the practical engineering work I do today.
             </p>
             <div className="timeline-column">
               {profile.education.map((item, index) => (
@@ -66,7 +66,7 @@ function Experience() {
                       <span className="time-pill">{item.period}</span>
                     </div>
                     <p className="mb-0 timeline-text">
-                      Focused on software engineering fundamentals, application development, and the practical skills needed to build and support production-ready systems.
+                      I focused on software engineering fundamentals, application development, and the practical skills needed to build and support production-ready systems.
                     </p>
                   </div>
                 </motion.div>

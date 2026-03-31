@@ -3,7 +3,7 @@ export const profile = {
   role: 'Software Engineer',
   title: 'Full Stack Developer & Production Support Engineer',
   summary:
-    'I am a software engineer with hands-on experience in backend, frontend, and mobile development. My work focuses on building full-stack applications, integrating complex APIs, deploying production systems, and supporting users in a clear and professional way.',
+    'I am a software engineer with hands-on experience in backend, frontend, and mobile development. Over the last few years, I have focused on building full-stack applications, integrating complex APIs, deploying production systems, and supporting users in a clear and professional way. I enjoy turning operational requirements into reliable software that is practical, maintainable, and ready for real use.',
   location: 'Kigali, Rwanda',
   phone: '+250 786 042 755',
   email: 'beniobed02@gmail.com',

@@ -44,6 +44,7 @@ function Hero() {
               <p className="hero-text">
                 I build reliable full-stack systems, integrate real APIs, deploy production software, and support users once the work is live.
                 My experience covers dashboards, mobile workflows, deployment, and troubleshooting, with a strong focus on software that remains useful in real working environments.
+                I aim to deliver solutions that are not only functional on launch day, but also dependable for teams who rely on them every day.
               </p>
               <div className="hero-actions-wrap">
                 <a href="#projects" className="split-button text-decoration-none">View My Work</a>

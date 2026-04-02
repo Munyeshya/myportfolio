@@ -39,7 +39,7 @@ img { display: block; max-width: 100%; }
     linear-gradient(180deg, #181515 0%, #121010 100%);
 }
 
-.ripple-canvas-layer,
+.cursor-halo-layer,
 .snow-layer,
 .meteor-layer {
   position: fixed;
@@ -49,8 +49,40 @@ img { display: block; max-width: 100%; }
   z-index: 0;
 }
 
-.ripple-canvas-layer {
-  opacity: 0.82;
+.cursor-halo-layer {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+.cursor-halo-layer.is-visible {
+  opacity: 0.92;
+}
+
+.cursor-halo-core,
+.cursor-halo-ring {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-halo-core {
+  width: 84px;
+  height: 84px;
+  background: radial-gradient(circle, rgba(255, 188, 62, 0.36) 0%, rgba(255, 132, 0, 0.22) 45%, rgba(255, 94, 0, 0) 74%);
+  filter: blur(4px);
+}
+
+.cursor-halo-ring {
+  width: 126px;
+  height: 126px;
+  border: 1px solid rgba(255, 163, 48, 0.22);
+  box-shadow:
+    0 0 28px rgba(255, 136, 0, 0.12),
+    inset 0 0 22px rgba(255, 196, 84, 0.06);
 }
 
 .snowflake {
@@ -1318,7 +1350,7 @@ img { display: block; max-width: 100%; }
   .section-divider-wrap { margin: 0.1rem 0 0; }
   .divider-spacer-after-projects { margin: 0.45rem 0; }
   .divider-line-glow { width: 84px; }
-  .ripple-canvas-layer { display: none; }
+  .cursor-halo-layer { display: none; }
   .meteor { display: none; }
   .section-title { white-space: normal; }
   .footer-shell {

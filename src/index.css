@@ -39,6 +39,7 @@ img { display: block; max-width: 100%; }
     linear-gradient(180deg, #181515 0%, #121010 100%);
 }
 
+.ripple-canvas-layer,
 .snow-layer,
 .meteor-layer {
   position: fixed;
@@ -46,6 +47,10 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
+}
+
+.ripple-canvas-layer {
+  opacity: 0.82;
 }
 
 .snowflake {
@@ -1313,6 +1318,7 @@ img { display: block; max-width: 100%; }
   .section-divider-wrap { margin: 0.1rem 0 0; }
   .divider-spacer-after-projects { margin: 0.45rem 0; }
   .divider-line-glow { width: 84px; }
+  .ripple-canvas-layer { display: none; }
   .meteor { display: none; }
   .section-title { white-space: normal; }
   .footer-shell {

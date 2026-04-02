@@ -9,6 +9,7 @@ import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import SectionDivider from '../components/SectionDivider'
 import Skills from '../components/Skills'
+import WaterRippleEffect from '../components/WaterRippleEffect'
 
 const snowflakes = [
   { className: 'snowflake snowflake-one', symbol: '•' },
@@ -37,6 +38,7 @@ function Home() {
 
   return (
     <div className="site-page">
+      <WaterRippleEffect />
       <div className="snow-layer" aria-hidden="true">
         {snowflakes.map((flake) => (
           <span key={flake.className} className={flake.className}>{flake.symbol}</span>

@@ -43,12 +43,15 @@ img { display: block; max-width: 100%; }
 .snow-layer,
 .meteor-layer {
   position: fixed;
-  inset: 0;
   pointer-events: none;
   z-index: 0;
 }
 
 .cursor-halo-layer {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
   overflow: visible;
   opacity: 0;
   transition: opacity 0.18s ease;
@@ -56,6 +59,7 @@ img { display: block; max-width: 100%; }
 
 .snow-layer,
 .meteor-layer {
+  inset: 0;
   overflow: hidden;
 }
 

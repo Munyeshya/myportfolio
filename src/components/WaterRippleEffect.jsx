@@ -65,9 +65,10 @@ function WaterRippleEffect() {
           ripple.radius * 1.15,
         )
 
-        gradient.addColorStop(0, `rgba(255, 214, 94, ${ripple.opacity * 0.12})`)
-        gradient.addColorStop(0.55, `rgba(255, 168, 41, ${ripple.opacity * 0.28})`)
-        gradient.addColorStop(1, 'rgba(255, 140, 0, 0)')
+        gradient.addColorStop(0, `rgba(255, 174, 51, ${ripple.opacity * 0.14})`)
+        gradient.addColorStop(0.45, `rgba(255, 128, 0, ${ripple.opacity * 0.34})`)
+        gradient.addColorStop(0.78, `rgba(255, 94, 0, ${ripple.opacity * 0.18})`)
+        gradient.addColorStop(1, 'rgba(255, 94, 0, 0)')
 
         context.beginPath()
         context.arc(ripple.x, ripple.y, ripple.radius, 0, Math.PI * 2)
@@ -77,7 +78,7 @@ function WaterRippleEffect() {
 
         context.beginPath()
         context.arc(ripple.x, ripple.y, ripple.radius * 0.58, 0, Math.PI * 2)
-        context.strokeStyle = `rgba(255, 241, 209, ${ripple.opacity * 0.14})`
+        context.strokeStyle = `rgba(255, 196, 112, ${ripple.opacity * 0.16})`
         context.lineWidth = Math.max(0.8, ripple.lineWidth * 0.5)
         context.stroke()
 

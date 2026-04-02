@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -6,6 +7,10 @@ import { projects } from '../data/projects'
 function ProjectDetail() {
   const { slug } = useParams()
   const project = projects.find((item) => item.slug === slug)
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [slug])
 
   if (!project) {
     return (

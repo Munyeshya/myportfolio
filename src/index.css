@@ -45,15 +45,18 @@ img { display: block; max-width: 100%; }
   position: fixed;
   inset: 0;
   pointer-events: none;
-  overflow: hidden;
   z-index: 0;
 }
 
 .cursor-halo-layer {
-  width: 0;
-  height: 0;
+  overflow: visible;
   opacity: 0;
   transition: opacity 0.18s ease;
+}
+
+.snow-layer,
+.meteor-layer {
+  overflow: hidden;
 }
 
 .cursor-halo-layer.is-visible {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import About from '../components/About'
 import Certifications from '../components/Certifications'
 import Contact from '../components/Contact'
@@ -24,6 +25,7 @@ const snowflakes = [
 
 function Home() {
   const [showBackToTop, setShowBackToTop] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,6 +37,20 @@ function Home() {
 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    if (!location.hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+      return
+    }
+
+    const target = document.querySelector(location.hash)
+    if (!target) return
+
+    window.requestAnimationFrame(() => {
+      target.scrollIntoView({ behavior: 'auto', block: 'start' })
+    })
+  }, [location.hash])
 
   return (
     <div className="site-page">

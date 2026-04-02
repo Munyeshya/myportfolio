@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import WaterRippleEffect from '../components/WaterRippleEffect'
 import { projects } from '../data/projects'
 
 function ProjectDetail() {
@@ -15,6 +16,7 @@ function ProjectDetail() {
   if (!project) {
     return (
       <div className="site-page">
+        <WaterRippleEffect />
         <Navbar />
         <main className="project-detail-page">
           <div className="container">
@@ -34,6 +36,7 @@ function ProjectDetail() {
 
   return (
     <div className="site-page">
+      <WaterRippleEffect />
       <Navbar />
       <main className="project-detail-page">
         <div className="container">

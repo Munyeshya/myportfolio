@@ -73,19 +73,19 @@ img { display: block; max-width: 100%; }
 }
 
 .cursor-halo-core {
-  width: 84px;
-  height: 84px;
-  background: radial-gradient(circle, rgba(255, 188, 62, 0.36) 0%, rgba(255, 132, 0, 0.22) 45%, rgba(255, 94, 0, 0) 74%);
-  filter: blur(4px);
+  width: 46px;
+  height: 46px;
+  background: radial-gradient(circle, rgba(255, 188, 62, 0.34) 0%, rgba(255, 132, 0, 0.2) 48%, rgba(255, 94, 0, 0) 76%);
+  filter: blur(3px);
 }
 
 .cursor-halo-ring {
-  width: 126px;
-  height: 126px;
-  border: 1px solid rgba(255, 163, 48, 0.22);
+  width: 72px;
+  height: 72px;
+  border: 1px solid rgba(255, 163, 48, 0.2);
   box-shadow:
-    0 0 28px rgba(255, 136, 0, 0.12),
-    inset 0 0 22px rgba(255, 196, 84, 0.06);
+    0 0 18px rgba(255, 136, 0, 0.1),
+    inset 0 0 14px rgba(255, 196, 84, 0.05);
 }
 
 .snowflake {

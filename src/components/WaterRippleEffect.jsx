@@ -12,8 +12,8 @@ function WaterRippleEffect() {
     if (!halo || mediaQuery.matches) return undefined
 
     const moveHalo = () => {
-      currentRef.current.x += (targetRef.current.x - currentRef.current.x) * 0.16
-      currentRef.current.y += (targetRef.current.y - currentRef.current.y) * 0.16
+      currentRef.current.x += (targetRef.current.x - currentRef.current.x) * 0.34
+      currentRef.current.y += (targetRef.current.y - currentRef.current.y) * 0.34
 
       halo.style.transform = `translate3d(${currentRef.current.x}px, ${currentRef.current.y}px, 0) translate(-50%, -50%)`
       frameRef.current = window.requestAnimationFrame(moveHalo)
